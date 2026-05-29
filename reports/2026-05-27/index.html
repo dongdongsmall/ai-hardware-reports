@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI 硬件成品日报｜2026-05-27</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #1d252c;
+      --muted: #63707a;
+      --line: #d8dee4;
+      --paper: #f7f8f6;
+      --panel: #ffffff;
+      --accent: #176b60;
+      --accent-2: #b64232;
+      --accent-3: #355c9a;
+      --soft: #e8f2ef;
+      --warn: #fff3d7;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--accent-3);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(53, 92, 154, .25);
+    }
+
+    a:hover {
+      border-bottom-color: currentColor;
+    }
+
+    .hero {
+      padding: 34px 28px 24px;
+      background: #0f2f32;
+      color: #fff;
+    }
+
+    .hero-inner,
+    main {
+      width: min(1180px, calc(100vw - 40px));
+      margin: 0 auto;
+    }
+
+    .eyebrow {
+      margin: 0 0 8px;
+      color: #a7d2cc;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(30px, 4vw, 56px);
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+
+    .hero p {
+      max-width: 820px;
+      margin: 16px 0 0;
+      color: #d7e6e4;
+      font-size: 17px;
+    }
+
+    .meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 22px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 10px;
+      border: 1px solid rgba(255, 255, 255, .24);
+      border-radius: 999px;
+      color: #edf7f5;
+      font-size: 13px;
+      white-space: nowrap;
+    }
+
+    main {
+      padding: 26px 0 52px;
+    }
+
+    .summary {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-bottom: 26px;
+    }
+
+    .metric {
+      padding: 18px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    .metric strong {
+      display: block;
+      font-size: 30px;
+      line-height: 1;
+      color: var(--accent);
+    }
+
+    .metric span {
+      display: block;
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    section {
+      margin-top: 30px;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: 24px;
+      line-height: 1.2;
+      letter-spacing: 0;
+    }
+
+    .note {
+      padding: 14px 16px;
+      background: var(--soft);
+      border: 1px solid #cce2dc;
+      border-radius: 8px;
+      color: #244542;
+      font-size: 15px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .grid.two {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .product {
+      overflow: hidden;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    .product img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+      display: block;
+      background: #e6e9ed;
+    }
+
+    .product .body {
+      padding: 16px;
+    }
+
+    .tag {
+      display: inline-flex;
+      margin-bottom: 9px;
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: #f2f4f7;
+      color: #4b5661;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .tag.personal {
+      background: #e8f2ef;
+      color: #176b60;
+    }
+
+    .tag.home {
+      background: #f5e9e2;
+      color: #8a3c28;
+    }
+
+    .tag.enterprise {
+      background: #e9eef8;
+      color: #355c9a;
+    }
+
+    h3 {
+      margin: 0 0 8px;
+      font-size: 20px;
+      line-height: 1.25;
+      letter-spacing: 0;
+    }
+
+    .facts {
+      margin: 12px 0 0;
+      padding: 0;
+      list-style: none;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .facts li {
+      margin: 6px 0;
+    }
+
+    .facts b {
+      color: var(--ink);
+    }
+
+    .callout {
+      padding: 14px 16px;
+      background: var(--warn);
+      border: 1px solid #efd58d;
+      border-radius: 8px;
+      color: #5a4200;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    th,
+    td {
+      padding: 11px 12px;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+      text-align: left;
+      font-size: 14px;
+    }
+
+    th {
+      background: #eef2f3;
+      color: #38434d;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .sources {
+      columns: 2;
+      column-gap: 28px;
+      padding-left: 18px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .sources li {
+      break-inside: avoid;
+      margin-bottom: 8px;
+    }
+
+    footer {
+      margin-top: 36px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 920px) {
+      .summary,
+      .grid,
+      .grid.two {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .hero-inner,
+      main {
+        width: min(100vw - 28px, 1180px);
+      }
+
+      .summary,
+      .grid,
+      .grid.two {
+        grid-template-columns: 1fr;
+      }
+
+      .product img {
+        height: 210px;
+      }
+
+      .sources {
+        columns: 1;
+      }
+
+      th,
+      td {
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">AI 硬件成品日报</p>
+      <h1>2026 年 5 月 27 日：过去 24 小时全球终端产品发布与首发开售</h1>
+      <p>只纳入面向最终用户的完成品 AI 硬件；排除芯片、服务器、开发板、数据中心、云服务、模型、纯软件、概念演示和未正式开售的预告。</p>
+      <div class="meta-row">
+        <span class="pill">检索窗口：2026-05-26 13:03 至 2026-05-27 13:12 CST</span>
+        <span class="pill">地区覆盖：美国、中国、印度、欧洲/亚洲官方源与英文技术媒体</span>
+        <span class="pill">语言：简体中文</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="summary" aria-label="摘要指标">
+      <div class="metric"><strong>5</strong><span>纳入主清单的成品设备/系列</span></div>
+      <div class="metric"><strong>3</strong><span>个人消费者产品</span></div>
+      <div class="metric"><strong>1</strong><span>家庭消费者产品</span></div>
+      <div class="metric"><strong>1</strong><span>企业消费者产品</span></div>
+    </div>
+
+    <section>
+      <h2>筛选口径</h2>
+      <div class="note">本报告把“发布”处理为三种可验证状态：正式新品发布、区域市场发布、首次零售开售。Fitbit Air 与 HMD Vibe2 5G 的首发公告早于 24 小时，但公开零售/首发销售落在本次窗口内，因此以“首发开售”标注，不与全新发布混淆。</div>
+    </section>
+
+    <section>
+      <h2>个人消费者</h2>
+      <div class="grid">
+        <article class="product">
+          <img src="assets/xreal-xbx-a01.jpg" alt="XREAL xbx a01 AR 眼镜">
+          <div class="body">
+            <span class="tag personal">个人娱乐 / AR 眼镜</span>
+            <h3>XREAL xbx a01 系列</h3>
+            <p>中国 AR 眼镜品牌 XREAL 发布年轻副线 xbx 的首款产品，定位“随身大屏”娱乐、游戏和通勤观影。</p>
+            <ul class="facts">
+              <li><b>状态：</b>5 月 26 日发布并正式开售。</li>
+              <li><b>价格：</b>a01 1699 元，a01+ 1799 元。</li>
+              <li><b>AI 相关：</b>全局实时 AI SDR 转 HDR、AI 姿态预测/空间防抖，每秒最高 120 帧空间画面渲染。</li>
+              <li><b>硬件要点：</b>62g，50° FOV，1600 nits，MicroOLED，HDR10。</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="product">
+          <img src="assets/fitbit-air.png" alt="Google Fitbit Air">
+          <div class="body">
+            <span class="tag personal">个人健康 / 可穿戴</span>
+            <h3>Google Fitbit Air</h3>
+            <p>Google 的无屏健康追踪器在美国于 5 月 26 日上架，主打全天候被动健康数据采集和 AI 健康教练。</p>
+            <ul class="facts">
+              <li><b>状态：</b>5 月 26 日美国上架；新品预购始于 5 月 7 日。</li>
+              <li><b>价格：</b>99.99 美元；Stephen Curry 特别版 129.99 美元。</li>
+              <li><b>AI 相关：</b>配合 Google Health Coach，使用 Gemini 提供运动、睡眠和健康建议。</li>
+              <li><b>硬件要点：</b>无屏、约 7 天续航、心率/SpO2/睡眠/房颤提醒等传感能力。</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="product">
+          <img src="assets/hmd-vibe2.jpg" alt="HMD Vibe2 5G 手机">
+          <div class="body">
+            <span class="tag personal">个人通信 / AI 手机</span>
+            <h3>HMD Vibe2 5G</h3>
+            <p>HMD 面向印度年轻用户的入门 5G 手机开始首发销售，卖点是本地语言 AI 助手和大电池。</p>
+            <ul class="facts">
+              <li><b>状态：</b>5 月 26 日 12:00 IST 在 Flipkart 与 HMD.com 首发销售；发布公告早于本窗口。</li>
+              <li><b>价格：</b>常规 10999 卢比起；部分媒体记录首发限时价 9499 卢比。</li>
+              <li><b>AI 相关：</b>内置 Sarvam AI 的 Indus 助手，支持印度本地化语言体验；50MP AI 双摄。</li>
+              <li><b>硬件要点：</b>Android 16、6000mAh、120Hz 屏幕、IP64。</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>家庭消费者</h2>
+      <div class="grid two">
+        <article class="product">
+          <img src="assets/samsung-vision-ai-tv.png" alt="Samsung 2026 Vision AI TV">
+          <div class="body">
+            <span class="tag home">家庭娱乐 / AI 电视</span>
+            <h3>Samsung 2026 Vision AI TV 印度系列</h3>
+            <p>三星印度发布完整 2026 Vision AI TV 阵容，覆盖 Micro RGB、OLED、Neo QLED、The Frame、Mini LED 和 UHD。</p>
+            <ul class="facts">
+              <li><b>状态：</b>5 月 26 日印度发布，线上线下渠道即日起销售。</li>
+              <li><b>规模：</b>72 款型号。</li>
+              <li><b>价格：</b>UHD 36990 卢比起；Mini LED 42990 卢比起；Micro RGB 124990 卢比起。</li>
+              <li><b>AI 相关：</b>Vision AI Companion 集成 Bixby、Perplexity、Microsoft Copilot；AI Upscaling Pro、AI Soccer Mode、AI Sound Controller Pro。</li>
+            </ul>
+          </div>
+        </article>
+
+        <div class="callout">
+          <h3>家庭类观察项</h3>
+          <p>追觅 X60 Pro / Cyber X 等扫地机器人在过去 24 小时内有发布会预告与媒体预热，但截至本报告生成时间，未找到足够清晰的正式发布、价格和开售证据，因此未纳入主清单。</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>企业消费者</h2>
+      <div class="grid two">
+        <article class="product">
+          <img src="assets/microsoft-surface-business.png" alt="Microsoft Surface for Business AI PC">
+          <div class="body">
+            <span class="tag enterprise">企业办公 / AI PC</span>
+            <h3>Microsoft Surface Pro / Laptop 商用版</h3>
+            <p>微软亚洲中文源 5 月 27 日发布 Surface 商用版更新，面向企业 AI 工作流、安全管理和混合办公。</p>
+            <ul class="facts">
+              <li><b>状态：</b>5 月 27 日亚洲中文官方发布；英文市场披露早于本窗口。</li>
+              <li><b>产品：</b>Surface Pro 商用版、Surface Laptop 商用版，覆盖 13、13.8、15 英寸形态。</li>
+              <li><b>AI 相关：</b>Intel Core Ultra 第 3 代带端侧 AI 能力；晚些时候将有 Snapdragon X2 版本，本地 AI 推理速度较上代最高提升 80%。</li>
+              <li><b>企业要点：</b>Secured-core PC、Microsoft Intune、Windows Autopilot、Surface Management Portal、可维修设计。</li>
+            </ul>
+          </div>
+        </article>
+
+        <div class="callout">
+          <h3>企业类边界</h3>
+          <p>HP ZBook 8 G2a、ASUS VM441 AiO 等 AI PC 近期有市场更新，但公开发布时间不在本次 24 小时窗口内，或更偏“可订购/媒体补发”，未放入主清单。</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>剔除清单</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>候选</th>
+            <th>剔除原因</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>芯片、AI 加速卡、服务器、数据中心、云平台</td>
+            <td>属于上游或基础设施，不是最终用户成品硬件。</td>
+          </tr>
+          <tr>
+            <td>M5Stack / Orange Pi / LILYGO 等开发板或工作台</td>
+            <td>主要面向开发、实验或嵌入式集成，不是普通终端成品。</td>
+          </tr>
+          <tr>
+            <td>Google AI 眼镜、三星/小米未上市概念或渲染</td>
+            <td>未形成可购买完成品，或只有预告/泄露/概念演示。</td>
+          </tr>
+          <tr>
+            <td>雷鸟 V4 / GT 发布会预告</td>
+            <td>截至 13:12 CST，发布会尚未开始，缺少正式价格与销售状态。</td>
+          </tr>
+          <tr>
+            <td>Lava Shark 2 5G、普通耳机/充电底座</td>
+            <td>虽是成品硬件，但 AI 属性不足或只属于普通消费电子更新。</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>信号判断</h2>
+      <div class="note">过去 24 小时的真正增量集中在“AI 功能下沉到终端品类”：AR 眼镜把 AI 用于画质与防抖，电视把 AI 变成客厅入口，手机把本地语言助手预装为卖点，可穿戴把 AI 教练绑定到传感器数据。纯“AI PC”发布则需要更谨慎区分全球首发、区域发布和媒体再报道。</div>
+    </section>
+
+    <section>
+      <h2>主要来源</h2>
+      <ol class="sources">
+        <li><a href="https://www.ithome.com/0/955/467.htm">IT之家：XREAL xbx a01 系列 AR 眼镜发布</a></li>
+        <li><a href="https://tech.ifeng.com/c/8tRZbphz3gY">凤凰网科技：XREAL xbx a01 参数与 AI HDR / 防抖</a></li>
+        <li><a href="https://tutorials.xreal.com/docs/glasses/xbxa01/first-use/connect-device">XREAL 官方教程：xbx a01 连接与功能支持</a></li>
+        <li><a href="https://blog.google/products-and-platforms/devices/fitbit/fitbit-air/">Google Blog：Introducing the all-new Fitbit Air</a></li>
+        <li><a href="https://blog.google/products-and-platforms/products/google-health/google-health-coach/">Google Blog：Google Health Coach availability</a></li>
+        <li><a href="https://gadgets.beebom.com/news/hmd-vibe-2-5g-with-sarvam-ai-goes-on-sale-in-india-today-specifications-features-and-price">Beebom Gadgets：HMD Vibe2 5G 首发销售</a></li>
+        <li><a href="https://timesofindia.indiatimes.com/technology/mobiles-tabs/hmd-vibe-2-5g-smartphone-launched-at-rs-9499-sale-begins-on-may-26/articleshow/131306050.cms">Times of India：HMD Vibe2 5G 价格与 AI 功能</a></li>
+        <li><a href="https://news.samsung.com/in/samsung-brings-2026-vision-ai-tv-lineup-in-india-launches-72-models-across-micro-rgb-oled-neo-qled-the-frame-mini-led-and-uhd-tvs">Samsung Newsroom India：2026 Vision AI TV 阵容</a></li>
+        <li><a href="https://www.moneycontrol.com/technology/samsung-launches-2026-vision-ai-tv-lineup-in-india-with-72-models-across-oled-neo-qled-and-uhd-ranges-article-13931981.html">Moneycontrol：Samsung Vision AI TV 印度价格与渠道</a></li>
+        <li><a href="https://news.microsoft.com/source/asia/2026/05/27/%E5%85%A8%E6%96%B0-surface-%E5%95%86%E7%94%A8%E7%89%88%E7%99%BB%E5%9C%BA%EF%BC%8C%E4%B8%93%E4%B8%BA%E4%BC%81%E4%B8%9A%E4%B8%8E-ai-%E5%8A%A0%E9%80%9F%E6%89%93%E9%80%A0/?lang=zh-hans">Microsoft Source Asia：Surface 商用版 AI PC</a></li>
+      </ol>
+    </section>
+
+    <footer>
+      报告生成时间：2026-05-27 13:12 CST。图片资源已保存到本地 assets 目录；原始版权归各发布方或媒体所有。
+    </footer>
+  </main>
+</body>
+</html>
