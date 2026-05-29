@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI硬件完成品日报 - 2026-05-29</title>
+  <meta property="og:title" content="AI硬件完成品日报 - 2026-05-29">\n  <meta property="og:description" content="4 纳入主表的最终用户AI硬件项目；4 个人消费者项目，含穿戴、健康、音频与AI眼镜；0 家庭消费者项目，未发现本时间窗内可确证新品">\n  <meta property="og:type" content="article">\n  <meta property="og:url" content="https://dongdongsmall.github.io/ai-hardware-reports/2026-05-29/">\n  <meta name="twitter:card" content="summary_large_image">\n  <meta property="og:image" content="https://dongdongsmall.github.io/ai-hardware-reports/2026-05-29/assets/iflytek-ai-glasses.jpg">\n  <meta name="twitter:image" content="https://dongdongsmall.github.io/ai-hardware-reports/2026-05-29/assets/iflytek-ai-glasses.jpg">\n  <style>
+    :root {
+      --bg: #f7f5f0;
+      --panel: #ffffff;
+      --ink: #1f2933;
+      --muted: #667085;
+      --line: #d9dee7;
+      --teal: #167a7f;
+      --red: #b54708;
+      --blue: #2f5f9f;
+      --green: #2e7d32;
+      --black: #111827;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", "Microsoft YaHei", sans-serif;
+      line-height: 1.55;
+    }
+
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .page {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 28px 22px 42px;
+    }
+
+    header {
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 22px;
+      margin-bottom: 24px;
+    }
+
+    .eyebrow {
+      color: var(--teal);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0;
+      margin: 0 0 8px;
+    }
+
+    h1 {
+      font-size: clamp(30px, 5vw, 56px);
+      line-height: 1.04;
+      letter-spacing: 0;
+      margin: 0 0 16px;
+      max-width: 900px;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .pill {
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.7);
+      border-radius: 999px;
+      padding: 6px 10px;
+      white-space: nowrap;
+    }
+
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+      margin: 22px 0 30px;
+    }
+
+    .metric {
+      border: 1px solid var(--line);
+      background: var(--panel);
+      border-radius: 8px;
+      padding: 14px;
+      min-height: 112px;
+    }
+
+    .metric strong {
+      display: block;
+      font-size: 28px;
+      line-height: 1.1;
+      margin-bottom: 8px;
+    }
+
+    .metric span {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    section {
+      margin-top: 30px;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin: 0 0 14px;
+      letter-spacing: 0;
+    }
+
+    .section-note {
+      color: var(--muted);
+      margin: -4px 0 14px;
+      font-size: 14px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+    }
+
+    .card img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      background: #e8e6df;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .card-body {
+      padding: 16px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 10px;
+    }
+
+    .tag {
+      font-size: 12px;
+      color: var(--black);
+      background: #eef2f6;
+      border: 1px solid #d7dde5;
+      border-radius: 999px;
+      padding: 3px 8px;
+    }
+
+    .tag.hot { background: #e6f4f1; border-color: #b6dcd5; color: #0f5f61; }
+    .tag.warn { background: #fff3e6; border-color: #ffd3a6; color: #8a3b00; }
+
+    h3 {
+      margin: 0 0 8px;
+      font-size: 20px;
+      line-height: 1.25;
+      letter-spacing: 0;
+    }
+
+    .facts {
+      list-style: none;
+      padding: 0;
+      margin: 12px 0 0;
+      display: grid;
+      gap: 8px;
+      color: #344054;
+      font-size: 14px;
+    }
+
+    .facts li {
+      border-left: 3px solid var(--teal);
+      padding-left: 10px;
+    }
+
+    .empty {
+      border: 1px dashed #b8c2cc;
+      background: rgba(255,255,255,0.62);
+      border-radius: 8px;
+      padding: 18px;
+      color: #475467;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      display: table;
+      font-size: 14px;
+    }
+
+    th, td {
+      border-bottom: 1px solid var(--line);
+      padding: 11px 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: #eef2f6;
+      color: #344054;
+      font-weight: 700;
+    }
+
+    tr:last-child td { border-bottom: 0; }
+
+    .source-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .source-list li {
+      border: 1px solid var(--line);
+      background: var(--panel);
+      border-radius: 8px;
+      padding: 12px;
+      font-size: 14px;
+    }
+
+    footer {
+      margin-top: 34px;
+      border-top: 1px solid var(--line);
+      padding-top: 16px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 860px) {
+      .summary-grid, .cards, .source-list {
+        grid-template-columns: 1fr;
+      }
+
+      .card img {
+        height: 220px;
+      }
+
+      table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <p class="eyebrow">AI硬件完成品日报</p>
+      <h1>过去24小时全球最终用户AI硬件发布筛选</h1>
+      <div class="meta">
+        <span class="pill">报告时间：2026-05-29 13:01 CST</span>
+        <span class="pill">时间窗：2026-05-28 13:01 至 2026-05-29 13:01 CST</span>
+        <span class="pill">范围：完成品硬件，不含芯片、云、开发板、纯软件与概念展示</span>
+      </div>
+    </header>
+
+    <div class="summary-grid" aria-label="筛选摘要">
+      <div class="metric"><strong>4</strong><span>纳入主表的最终用户AI硬件项目</span></div>
+      <div class="metric"><strong>4</strong><span>个人消费者项目，含穿戴、健康、音频与AI眼镜</span></div>
+      <div class="metric"><strong>0</strong><span>家庭消费者项目，未发现本时间窗内可确证新品</span></div>
+      <div class="metric"><strong>0</strong><span>企业消费者项目，硬件平台与软件发布已剔除</span></div>
+    </div>
+
+    <section>
+      <h2>个人消费者</h2>
+      <p class="section-note">这一类是今天最集中的方向：AI眼镜继续加速商业化，智能戒指和音频穿戴也在把AI从“功能点”变成产品叙事的一部分。</p>
+      <div class="cards">
+        <article class="card">
+          <img src="assets/iflytek-ai-glasses.jpg" alt="讯飞AI眼镜在BEYOND Expo发布现场">
+          <div class="card-body">
+            <div class="tags">
+              <span class="tag hot">AI眼镜</span>
+              <span class="tag">中国/澳门</span>
+              <span class="tag">正式发布/预售定档</span>
+            </div>
+            <h3>讯飞 AI 眼镜</h3>
+            <p>科大讯飞在澳门 BEYOND Expo 2026 正式发布并公布商业化信息。核心卖点是多语种实时翻译、GlassClaw 智能助理、会议与办公工作流、智能提词和轻量化佩戴。</p>
+            <ul class="facts">
+              <li>重量约 40g，镁铝合金框架、树脂波导显示方案。</li>
+              <li>支持 122 种语言、口音与方言的翻译场景。</li>
+              <li>定价 4,299 元，计划 2026-06-15 开启预售。</li>
+              <li>面向商务旅行、会议、演讲、跨语言沟通等高频个人生产力场景。</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="assets/oura-ring-5.png" alt="Oura Ring 5 官方产品图">
+          <div class="card-body">
+            <div class="tags">
+              <span class="tag hot">智能戒指</span>
+              <span class="tag">美国/芬兰</span>
+              <span class="tag">预购开启</span>
+            </div>
+            <h3>Oura Ring 5</h3>
+            <p>Oura 发布第五代智能戒指，主打更小机身、更准确传感和健康AI服务。它不是单纯新外壳，软件层同步加入健康风险提示和AI辅助医疗入口。</p>
+            <ul class="facts">
+              <li>官方说法为比上一代小 40%，宽度约 6.09mm，厚度约 2.28-2.29mm。</li>
+              <li>价格 399 美元起，2026-05-28 开启预购，2026-06-04 起发货。</li>
+              <li>新增 Blood Pressure Signals、Nighttime Breathing、Health Radar 等健康监测功能。</li>
+              <li>与 Counsel Health 合作，在 Oura App 内提供 AI 加持的医生问答和远程护理入口。</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="assets/rokid-smart-ph.jpg" alt="Smart Postpaid 与 Rokid AI眼镜合约宣传图">
+          <div class="card-body">
+            <div class="tags">
+              <span class="tag hot">AI眼镜</span>
+              <span class="tag">菲律宾</span>
+              <span class="tag">区域开售</span>
+            </div>
+            <h3>Smart Postpaid x Rokid AI Glasses</h3>
+            <p>菲律宾运营商 Smart 将 Rokid AI Glasses 纳入后付费合约，2026-05-29 起开放。它属于区域商业化/渠道开售，而不是全球首发新品。</p>
+            <ul class="facts">
+              <li>支持 Google Gemini 原生集成，国际版还支持 ChatGPT、DeepSeek 与 Qwen。</li>
+              <li>Postpaid Plans+ 1499 用户可 28,800 菲律宾比索直付购镜，Infinity Plan 5000 可获赠。</li>
+              <li>面向旅行、创作者、商务转录、实时翻译、内容生成和免手持任务管理。</li>
+              <li>纳入原因：过去24小时内进入明确最终用户销售节点。</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="assets/noise-alt-buds-open.png" alt="Noise ALT Buds Open 产品图">
+          <div class="card-body">
+            <div class="tags">
+              <span class="tag warn">AI功能辅助型</span>
+              <span class="tag">印度</span>
+              <span class="tag">预订开启</span>
+            </div>
+            <h3>Noise ALT 系列</h3>
+            <p>Noise 发布 ALT 个人技术系列，包含 ALT Watch 1、ALT Buds Open、ALT Clip、ALT Buds 和 ALT Buds (S)。本项的AI属性弱于AI眼镜，但官方和媒体均把AI功能列入产品能力。</p>
+            <ul class="facts">
+              <li>ALT Watch 1 具备 AI transcription、AI Playground 自定义表盘和 AI 健康洞察。</li>
+              <li>ALT Buds Open 标注 AI-powered noise reduction，并提供语音问答、任务辅助等“AI Powered”能力。</li>
+              <li>印度预订已开启，正式销售计划 2026-06-16 开始。</li>
+              <li>纳入权重：中低，属于“成熟穿戴产品加AI功能”而非全新AI-first硬件品类。</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>家庭消费者</h2>
+      <div class="empty">
+        本轮未发现可确证的“过去24小时内发布或开售”的家庭消费者AI硬件完成品。Dreame X60 Pro / Cyber X 已确认是完整家用清洁硬件，但官方发布时间为 2026-05-27 10:00 GMT，早于本轮时间窗；X Square Robot / WALL-B 家庭机器人部署仍停留在此前公告与计划描述，未找到本时间窗内足以确认实际新发布或开售的证据。
+      </div>
+    </section>
+
+    <section>
+      <h2>企业消费者</h2>
+      <div class="empty">
+        本轮未纳入企业消费者硬件主项。检索到的 Retronix Sparrow Hawk 属于边缘AI计算平台，Benchling Automation、Wetour Orchestra、Navigate.AI、Trigger XR 等属于平台、软件、服务或上游/开发生态，不符合“面向最终用户的完成品AI硬件”口径。
+      </div>
+    </section>
+
+    <section>
+      <h2>候选与排除记录</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>候选</th>
+            <th>判断</th>
+            <th>原因</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Dreame X60 Pro / Cyber X</td>
+            <td>不纳入本轮主表</td>
+            <td>完成品家用硬件，但官方发布是 2026-05-27 10:00 GMT，早于 2026-05-28 13:01 CST 的窗口起点。</td>
+          </tr>
+          <tr>
+            <td>Retronix Sparrow Hawk</td>
+            <td>排除</td>
+            <td>边缘AI计算平台，面向机器人/制造/开发部署，不是最终用户完成品。</td>
+          </tr>
+          <tr>
+            <td>Warby Parker Intelligent Eyewear</td>
+            <td>观察</td>
+            <td>5月28日披露首款智能镜框，但计划今年秋季上市，缺少当前销售/预售节点。</td>
+          </tr>
+          <tr>
+            <td>Wetour Orchestra</td>
+            <td>排除</td>
+            <td>Physical AI 操作系统和协议层发布，不是独立最终用户硬件。</td>
+          </tr>
+          <tr>
+            <td>Mavis Viaro / Itero</td>
+            <td>排除</td>
+            <td>5月28日有媒体报道，但可追溯的官方发布节点在4月，非本轮窗口新品。</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>今日观察</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>方向</th>
+            <th>结论</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>AI眼镜</td>
+            <td>仍是最密集的端侧AI硬件赛道。发布从“硬件参数”转向翻译、会议、任务代理和渠道捆绑。</td>
+          </tr>
+          <tr>
+            <td>健康穿戴</td>
+            <td>Oura Ring 5 显示智能戒指正在从指标记录转向早期风险提示和AI辅助护理。</td>
+          </tr>
+          <tr>
+            <td>家庭机器人</td>
+            <td>新闻热度高，但本时间窗内足够严格的“完成品新品发布/开售”证据不足。</td>
+          </tr>
+          <tr>
+            <td>企业硬件</td>
+            <td>多数是边缘计算平台、系统层或软件平台，按本自动化口径应剔除。</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>主要来源</h2>
+      <ul class="source-list">
+        <li><a href="https://technode.com/2026/05/29/iflytek-launches-40g-ai-glasses-with-glassclaw-ai-agent-and-advanced-noise-recognition/">TechNode - iFlytek launches 40g AI glasses</a></li>
+        <li><a href="https://techcrunch.com/2026/05/28/oura-unveils-its-ring-5-with-a-thinner-lighter-design-starting-at-399/">TechCrunch - Oura unveils Ring 5</a></li>
+        <li><a href="https://businessmirror.com.ph/2026/05/25/smart-ushers-in-ai-age-with-launch-of-rokid-ai-glasses-and-google-gemini-ai-services/">BusinessMirror - Smart launches Rokid AI Glasses bundle</a></li>
+        <li><a href="https://www.moneycontrol.com/technology/noise-launches-alt-ecosystem-with-smartwatch-open-ear-buds-and-clip-on-audio-products-starting-at-rs-3-999-article-13934683.html">Moneycontrol - Noise ALT ecosystem launch</a></li>
+        <li><a href="https://www.gonoise.com/a/h/noise-alt-buds-open">Noise official - ALT Buds Open product page</a></li>
+        <li><a href="https://www.prnewswire.co.uk/news-releases/dreame-launches-the-x60-pro-series-and-t-series-wet--dry-vacuums-pushing-smart-home-boundaries-further-than-ever-302782979.html">PRNewswire - Dreame X60 Pro / Cyber X timing check</a></li>
+        <li><a href="https://www.digitimes.com/news/a20260527PR206/demand-edge-ai-development.html?chid=9">DIGITIMES - Retronix Sparrow Hawk exclusion check</a></li>
+        <li><a href="https://www.retaildive.com/news/warby-parker-intelligent-eyewear-smart-frames-AI/821098/">Retail Dive - Warby Parker Intelligent Eyewear watchlist</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      图片已本地化到 assets/ 目录。筛选按“最终用户完成品硬件”口径执行，区域开售和预售节点可纳入，但开发板、芯片、数据中心、云服务、纯软件和概念演示不纳入主表。
+    </footer>
+  </main>
+</body>
+</html>
