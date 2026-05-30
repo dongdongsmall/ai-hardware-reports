@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI硬件完成品日报 - 2026-05-30</title>
+  <meta property="og:title" content="AI硬件完成品日报 - 2026-05-30">
+  <meta property="og:description" content="7 主项纳入：个人 3、家庭 2、企业 2；4 高置信首要方向：AI 眼镜、AI PC、家用机器人、商用机器人；8 边界项排除：芯片、基础设施、纯软件、复述评测">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://dongdongsmall.github.io/ai-hardware-reports/2026-05-30/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:image" content="https://dongdongsmall.github.io/ai-hardware-reports/2026-05-30/assets/acer-gi0-ai-glasses.jpg">
+  <meta name="twitter:image" content="https://dongdongsmall.github.io/ai-hardware-reports/2026-05-30/assets/acer-gi0-ai-glasses.jpg">
+  <style>
+    :root {
+      --bg: #f3f6f8;
+      --panel: #ffffff;
+      --ink: #1d2730;
+      --muted: #62707f;
+      --line: #d7dee6;
+      --teal: #0f7a7d;
+      --blue: #285f9f;
+      --green: #2f7b4b;
+      --amber: #a85f00;
+      --red: #b33b35;
+      --slate: #24313e;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", "Microsoft YaHei", sans-serif;
+      line-height: 1.58;
+    }
+
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .page {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 28px 22px 42px;
+    }
+
+    header {
+      padding: 10px 0 24px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--teal);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    h1 {
+      margin: 0 0 14px;
+      max-width: 960px;
+      font-size: clamp(30px, 5vw, 56px);
+      line-height: 1.06;
+      letter-spacing: 0;
+    }
+
+    .dek {
+      margin: 0;
+      max-width: 920px;
+      color: #384653;
+      font-size: 16px;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 16px;
+    }
+
+    .pill {
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.78);
+      border-radius: 999px;
+      padding: 6px 10px;
+      color: var(--muted);
+      font-size: 13px;
+      white-space: nowrap;
+    }
+
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+      margin: 22px 0 30px;
+    }
+
+    .metric {
+      border: 1px solid var(--line);
+      background: var(--panel);
+      border-radius: 8px;
+      padding: 14px;
+      min-height: 112px;
+    }
+
+    .metric strong {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 28px;
+      line-height: 1.1;
+    }
+
+    .metric span {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    section { margin-top: 30px; }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 24px;
+      line-height: 1.24;
+      letter-spacing: 0;
+    }
+
+    .section-note {
+      margin: -2px 0 14px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      display: flex;
+      min-height: 100%;
+      overflow: hidden;
+      flex-direction: column;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+    }
+
+    .card img {
+      width: 100%;
+      height: 264px;
+      object-fit: cover;
+      background: #e5ebf0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .card-body { padding: 16px; }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 10px;
+    }
+
+    .tag {
+      border: 1px solid #d8e0e8;
+      border-radius: 999px;
+      background: #eef3f7;
+      color: var(--slate);
+      padding: 3px 8px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .tag.personal { background: #e7f6f5; border-color: #b6dcd7; color: #0d5f62; }
+    .tag.home { background: #eef7ed; border-color: #c2dfc0; color: #27663b; }
+    .tag.enterprise { background: #edf2fb; border-color: #bfcee6; color: #244d82; }
+    .tag.warn { background: #fff2de; border-color: #f1ca92; color: #7a4300; }
+
+    h3 {
+      margin: 0 0 8px;
+      font-size: 20px;
+      line-height: 1.25;
+      letter-spacing: 0;
+    }
+
+    .card p {
+      margin: 0;
+      color: #31404d;
+    }
+
+    .facts {
+      display: grid;
+      gap: 8px;
+      list-style: none;
+      margin: 12px 0 0;
+      padding: 0;
+      color: #334553;
+      font-size: 14px;
+    }
+
+    .facts li {
+      border-left: 3px solid var(--teal);
+      padding-left: 10px;
+    }
+
+    .facts li.enterprise-line { border-left-color: var(--blue); }
+    .facts li.home-line { border-left-color: var(--green); }
+    .facts li.warn-line { border-left-color: var(--amber); }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      font-size: 14px;
+    }
+
+    th, td {
+      border-bottom: 1px solid var(--line);
+      padding: 11px 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: #eaf0f5;
+      color: #334553;
+      font-weight: 800;
+    }
+
+    tr:last-child td { border-bottom: 0; }
+
+    .source-list {
+      display: grid;
+      gap: 8px;
+      margin: 0;
+      padding-left: 20px;
+      font-size: 14px;
+    }
+
+    .callout {
+      border: 1px solid #b8c9dc;
+      border-left: 5px solid var(--blue);
+      border-radius: 8px;
+      background: #ffffff;
+      padding: 15px;
+      color: #334553;
+    }
+
+    .callout p { margin: 0; }
+
+    footer {
+      margin-top: 32px;
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 820px) {
+      .page { padding: 22px 14px 34px; }
+      .summary-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .cards { grid-template-columns: 1fr; }
+      .card img { height: 238px; }
+      table { display: block; overflow-x: auto; white-space: nowrap; }
+      th, td { white-space: normal; min-width: 142px; }
+    }
+
+    @media (max-width: 480px) {
+      .summary-grid { grid-template-columns: 1fr; }
+      .metric { min-height: auto; }
+      .pill { white-space: normal; }
+      .card img { height: 214px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <p class="eyebrow">AI硬件，每日推送</p>
+      <h1>过去24小时全球终端 AI 硬件完成品筛选</h1>
+      <p class="dek">本期只纳入面向最终用户的整机产品：个人穿戴与 AI PC、家庭清洁与家用桌面、企业采购的商用终端和可交付机器人。芯片、云平台、测试基础设施、纯软件和旧闻复述不列为主项。</p>
+      <div class="meta">
+        <span class="pill">报告日期：2026-05-30</span>
+        <span class="pill">数据窗口：2026-05-29 13:05 - 2026-05-30 13:05 CST</span>
+        <span class="pill">范围：全球公开发布与官方产品页</span>
+      </div>
+    </header>
+
+    <div class="summary-grid">
+      <div class="metric"><strong>7</strong><span>主项纳入：个人 3、家庭 2、企业 2</span></div>
+      <div class="metric"><strong>4</strong><span>高置信首要方向：AI 眼镜、AI PC、家用机器人、商用机器人</span></div>
+      <div class="metric"><strong>8</strong><span>边界项排除：芯片、基础设施、纯软件、复述评测</span></div>
+      <div class="metric"><strong>0</strong><span>上游芯片或数据中心设备进入主清单</span></div>
+    </div>
+
+    <section>
+      <h2>个人消费者</h2>
+      <p class="section-note">重点是个人直接购买、佩戴或使用的 AI 眼镜和 AI PC，而不是零部件发布。</p>
+      <div class="cards">
+        <article class="card">
+          <img src="assets/acer-gi0-ai-glasses.jpg" alt="Acer GI0 AI Glasses 官方产品图">
+          <div class="card-body">
+            <div class="tags">
+              <span class="tag personal">个人消费者</span>
+              <span class="tag">AI眼镜</span>
+              <span class="tag">Google Gemini</span>
+            </div>
+            <h3>Acer GI0 AI Glasses</h3>
+            <p>Acer 在 5 月 29 日发布 GI0 AI 眼镜，定位为无线、免手持的日常 AI 伴侣。它不是单纯显示器眼镜，而是把 Gemini 语音助理、图像分析、翻译、拍摄和录音放进眼镜形态。</p>
+            <ul class="facts">
+              <li>支持语音交互、实时图像分析和即时翻译，面向旅行、通勤和移动办公。</li>
+              <li>内置摄像头可拍照和录像，搭配 AspireSync App，支持 Android 与 iOS。</li>
+              <li>官方价格：北美 299.99 美元起；EMEA 399 欧元起；澳大利亚 599 澳元起。</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="assets/iflytek-ai-glasses.jpg" alt="讯飞 AI 眼镜发布会产品图">
+          <div class="card-body">
+            <div class="tags">
+              <span class="tag personal">个人消费者</span>
+              <span class="tag">AI眼镜</span>
+              <span class="tag">翻译办公</span>
+            </div>
+            <h3>讯飞 AI 眼镜</h3>
+            <p>TechNode 在 5 月 29 日报道，讯飞于 BEYOND Expo 2026 发布新 AI 眼镜。核心卖点不是拍摄，而是多语言实时翻译、复杂噪声识别、会议与办公代理。</p>
+            <ul class="facts">
+              <li>支持 122 种语言、口音和方言的面对面、电话、会议与 AR 文字翻译。</li>
+              <li>GlassClaw 代理可做会议转写、信息整理、邮件发送和工作流执行。</li>
+              <li>约 40 克，标价 4,299 元人民币，6 月 15 日开启预售。</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="assets/acer-aspire-x16-ai.jpg" alt="Acer Aspire X 16 AI 官方产品图">
+          <div class="card-body">
+            <div class="tags">
+              <span class="tag personal">个人消费者</span>
+              <span class="tag">Copilot+ PC</span>
+              <span class="tag">本地AI</span>
+            </div>
+            <h3>Acer Aspire X 16 AI / Aspire 18 AI</h3>
+            <p>Acer 扩大 Aspire AI Copilot+ PC 线，推出 Aspire X 16 AI 与 Aspire 18 AI，面向创作、学习和日常生产力用户。它们是整机 AI PC，不是处理器单独发布。</p>
+            <ul class="facts">
+              <li>Aspire X 16 AI 最高搭载 Intel Core Ultra X9，平台 AI 性能最高 180 TOPS。</li>
+              <li>16 英寸 3K OLED、最高 32GB LPDDR5X、双 M.2 SSD，偏创作与高强度办公。</li>
+              <li>上市窗口：Aspire X 16 AI 北美 8 月、EMEA 7 月；Aspire 18 AI 北美 8 月、EMEA 6 月。</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>家庭消费者</h2>
+      <p class="section-note">本类只收家用场景明确的完成品，包含家庭清洁机器人和面向家庭/学生/共享工作区的桌面 AI 终端。</p>
+      <div class="cards">
+        <article class="card">
+          <img src="assets/xiaomi-h50-pro.jpg" alt="Xiaomi Robot Vacuum H50 Pro 产品图">
+          <div class="card-body">
+            <div class="tags">
+              <span class="tag home">家庭消费者</span>
+              <span class="tag">扫拖机器人</span>
+              <span class="tag">自动维护</span>
+            </div>
+            <h3>Xiaomi Robot Vacuum H50 / H50 Pro</h3>
+            <p>小米在全球市场推出 H50 与 H50 Pro 扫拖机器人。它们属于明确的家庭完成品，核心提升是强吸力、自维护基站、边角清洁和全屋路径规划。</p>
+            <ul class="facts">
+              <li class="home-line">H50 Pro 提供 15,000Pa 吸力，伸缩边刷与拖布用于贴边、角落和低矮家具区域。</li>
+              <li class="home-line">自清洁基站支持集尘、洗拖布和热风烘干；尘袋最长约 75 天再处理。</li>
+              <li class="home-line">欧洲定价：H50 399 欧元起，H50 Pro 499 欧元起；英国分别 359 英镑、459 英镑起。</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="assets/acer-aspire-c-ai.jpg" alt="Acer Aspire C27 AI 一体机官方产品图">
+          <div class="card-body">
+            <div class="tags">
+              <span class="tag home">家庭消费者</span>
+              <span class="tag">AI一体机</span>
+              <span class="tag">家庭桌面</span>
+            </div>
+            <h3>Acer Aspire C27 AI / C24 AI</h3>
+            <p>Acer 新增 Aspire C27 AI 与 C24 AI 一体机，官方明确指向家庭用户、学生和家庭共享空间。相比普通显示器，它们是带 AI 处理器和 Copilot+ 体验的整机桌面终端。</p>
+            <ul class="facts">
+              <li class="home-line">23.8 英寸与 27 英寸两种形态，可选触控，屏占比 90%，最高 144Hz。</li>
+              <li class="home-line">AMD 版本使用 Ryzen AI 400 系列；Intel 版本使用 Core Ultra Series 3。</li>
+              <li class="home-line">北美 Q3 2026、EMEA 9 月、澳大利亚 Q4 2026 上市。</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>企业消费者</h2>
+      <p class="section-note">企业类按“企业最终采购的整机终端/机器人”收录；偏数据中心、测试仪、网络平台的项目放入排除表。</p>
+      <div class="cards">
+        <article class="card">
+          <img src="assets/acer-travelmate-business-ai.jpg" alt="Acer TravelMate 商务 AI PC 官方产品图">
+          <div class="card-body">
+            <div class="tags">
+              <span class="tag enterprise">企业消费者</span>
+              <span class="tag">商用AI PC</span>
+              <span class="tag">SMB / 企业</span>
+            </div>
+            <h3>Acer TravelMate P6 14 AI 与商用线</h3>
+            <p>Acer 发布 TravelMate P6 14 AI、P2 Spin 14、X2 15、X2 14 等商用笔电，面向企业与中小企业部署。主打本地 AI 性能、安全管理和长续航。</p>
+            <ul class="facts">
+              <li class="enterprise-line">TravelMate P6 14 AI 最高 150 平台 TOPS，搭载 Intel vPro，机身低于 1 千克。</li>
+              <li class="enterprise-line">最高 30 小时视频播放续航，支持 Wi-Fi 7、Thunderbolt 4 和多层安全能力。</li>
+              <li class="enterprise-line">P6 14 AI 北美、EMEA 8 月上市，澳大利亚 Q4 2026 上市。</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="assets/engineai-t800.jpg" alt="EngineAI T800 人形机器人产线图">
+          <div class="card-body">
+            <div class="tags">
+              <span class="tag enterprise">企业消费者</span>
+              <span class="tag">人形机器人</span>
+              <span class="tag">批量交付</span>
+            </div>
+            <h3>EngineAI T800 首批下线交付</h3>
+            <p>EngineAI 宣布深圳智能制造基地启动，并称首批 T800 全尺寸人形机器人下线进入批量交付阶段。它不是家庭消费品，而是面向商业服务、教育科研、工业制造等企业客户的成品机器人。</p>
+            <ul class="facts">
+              <li class="enterprise-line">新基地约 12,000 平方米，覆盖来料检测、装配测试、整机测试、出货和售后。</li>
+              <li class="enterprise-line">公司称产线节拍可达到每 15 分钟一台人形机器人下线。</li>
+              <li class="enterprise-line">T800 定位高动态、高负载作业环境，属于具身智能整机交付进展。</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>边界与排除记录</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>候选</th>
+            <th>处理</th>
+            <th>原因</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>BYD Xuanji A3 智驾芯片、MediaTek Computex 平台、NVIDIA/Qualcomm 相关芯片新闻</td>
+            <td>排除</td>
+            <td>芯片或上游平台，不是终端完成品。</td>
+          </tr>
+          <tr>
+            <td>CATL 储能测试平台、VIAVI CyberFlood CF1000、EnGenius 网络/监控平台</td>
+            <td>排除</td>
+            <td>基础设施、测试设备或平台型部署，不属于最终用户 AI 硬件完成品。</td>
+          </tr>
+          <tr>
+            <td>Acer Veriton RA110 AI Mini Workstation</td>
+            <td>边界项</td>
+            <td>是整机工作站，但用途偏 AI 开发/本地模型部署，本期不放入主消费分类。</td>
+          </tr>
+          <tr>
+            <td>Acer Predator Helios 18 AI / Nitro 16</td>
+            <td>边界项</td>
+            <td>是终端游戏本，但 AI 属性主要来自高性能 GPU 与游戏加速，本期优先收录通用 AI PC。</td>
+          </tr>
+          <tr>
+            <td>Acer e-bike / e-scooter 智慧出行线</td>
+            <td>排除</td>
+            <td>新增语音控制和互联 App，但公开材料未将其定义为 AI 硬件。</td>
+          </tr>
+          <tr>
+            <td>Kiwibit Bird Feeder Pro 4K AI Camera</td>
+            <td>排除</td>
+            <td>5 月 29 日是评测/体验文章，产品不是本窗口新发布。</td>
+          </tr>
+          <tr>
+            <td>Oura Ring 5、Smart Postpaid x Rokid、Noise ALT</td>
+            <td>不重复计入</td>
+            <td>已在 2026-05-29 报告中纳入或讨论，本期没有新的首发事实。</td>
+          </tr>
+          <tr>
+            <td>Tencent WorkBuddy、Claroty Claire、Operant Endpoint Protector 等</td>
+            <td>排除</td>
+            <td>纯软件或安全代理，不是硬件完成品。</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>今日观察</h2>
+      <div class="callout">
+        <p>今天的完成品信号高度集中在“把 AI 带到用户手边”的形态：眼镜负责移动场景的看、听、译和记录；AI PC 继续按个人/家庭/商用线分层铺货；家用机器人从“能扫”转向更少维护；商用机器人新闻则从演示转向产线节拍和交付能力。</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>主要来源</h2>
+      <ol class="source-list">
+        <li><a href="https://news.acer.com/new-acer-tablets-plus-ai-and-ar-glasses-expand-on-the-go-capabilities">Acer - New Acer Tablets Plus AI and AR Glasses Expand On-the-Go Capabilities</a></li>
+        <li><a href="https://technode.com/2026/05/29/iflytek-launches-40g-ai-glasses-with-glassclaw-ai-agent-and-advanced-noise-recognition/">TechNode - iFlytek launches 40g AI glasses</a></li>
+        <li><a href="https://news.acer.com/acer-expands-lineup-of-aspire-ai-copilot-pcs-with-new-laptops-and-all-in-ones">Acer - Aspire AI Copilot+ PCs With New Laptops and All-in-Ones</a></li>
+        <li><a href="https://www.gizmochina.com/2026/05/29/xiaomi-launches-two-new-robot-vacuums-globally-with-self-cleaning-docks/">Gizmochina - Xiaomi launches two new robot vacuums globally</a></li>
+        <li><a href="https://www.mi.com/global/product/xiaomi-robot-vacuum-h50-pro/">Xiaomi Global - Xiaomi Robot Vacuum H50 Pro</a></li>
+        <li><a href="https://news.acer.com/acer-unveils-sub-1kg-travelmate-p6-14-ai-business-laptop-with-new-acer-comfort-touch-design-for-premium-luxury-on-the-move">Acer - TravelMate P6 14 AI business laptop lineup</a></li>
+        <li><a href="https://www.prnewswire.com/news-releases/engineai-launches-shenzhen-intelligent-manufacturing-base-as-first-batch-of-t800-humanoid-robots-roll-off-the-production-line-to-begin-mass-delivery-302785384.html">PR Newswire - EngineAI T800 humanoid robots begin mass delivery</a></li>
+        <li><a href="https://news.acer.com/acer-unveils-comprehensive-lineup-of-veriton-workstations-and-desktops">Acer - Veriton workstations and desktops</a></li>
+        <li><a href="https://news.acer.com/acer-introduces-predator-helios-18-ai-the-ultimate-gaming-laptop">Acer - Predator Helios 18 AI gaming laptop lineup</a></li>
+        <li><a href="https://techcrunch.com/2026/05/29/kiwibits-ai-powered-bird-feeder-is-my-new-backyard-buddy/">TechCrunch - Kiwibit AI-powered bird feeder review</a></li>
+      </ol>
+    </section>
+
+    <footer>
+      本报告由 Codex 自动检索、筛选和整理。纳入标准为“终端用户可理解和采购的完成品 AI 硬件”；价格与上市时间以各地区最终公告为准。
+    </footer>
+  </main>
+</body>
+</html>
