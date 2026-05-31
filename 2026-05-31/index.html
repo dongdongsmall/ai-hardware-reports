@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI硬件完成品日报 - 2026-05-31</title>
+  <meta property="og:title" content="AI硬件完成品日报 - 2026-05-31">
+  <meta property="og:description" content="2 严格入选的 AI 硬件成品；1 个人消费者：AI 可穿戴；1 家庭消费者：AI 家电">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://dongdongsmall.github.io/ai-hardware-reports/2026-05-31/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:image" content="https://dongdongsmall.github.io/ai-hardware-reports/2026-05-31/assets/screening-dashboard.svg">
+  <meta name="twitter:image" content="https://dongdongsmall.github.io/ai-hardware-reports/2026-05-31/assets/screening-dashboard.svg">
+  <style>
+    :root {
+      --bg: #f4f7f8;
+      --panel: #ffffff;
+      --ink: #1d2730;
+      --muted: #617080;
+      --line: #d8e1e8;
+      --teal: #0f777a;
+      --blue: #285f9f;
+      --green: #2f7b4b;
+      --amber: #a85f00;
+      --red: #a53f3a;
+      --slate: #26333f;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", "Microsoft YaHei", sans-serif;
+      line-height: 1.62;
+    }
+
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .page {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 28px 22px 46px;
+    }
+
+    header {
+      padding: 10px 0 24px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--teal);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    h1 {
+      margin: 0 0 14px;
+      max-width: 980px;
+      font-size: clamp(30px, 5vw, 56px);
+      line-height: 1.06;
+      letter-spacing: 0;
+    }
+
+    .dek {
+      margin: 0;
+      max-width: 930px;
+      color: #384653;
+      font-size: 16px;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 16px;
+    }
+
+    .pill {
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.78);
+      border-radius: 999px;
+      padding: 6px 10px;
+      color: var(--muted);
+      font-size: 13px;
+      white-space: nowrap;
+    }
+
+    .hero-visual {
+      margin: 22px 0 26px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+    }
+
+    .hero-visual img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+      margin: 22px 0 30px;
+    }
+
+    .metric {
+      min-height: 112px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      padding: 14px;
+    }
+
+    .metric strong {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 28px;
+      line-height: 1.1;
+    }
+
+    .metric span {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    section { margin-top: 30px; }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 24px;
+      line-height: 1.24;
+      letter-spacing: 0;
+    }
+
+    .section-note {
+      margin: -2px 0 14px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      display: flex;
+      min-height: 100%;
+      overflow: hidden;
+      flex-direction: column;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+    }
+
+    .card img {
+      width: 100%;
+      height: 264px;
+      object-fit: cover;
+      background: #e5ebf0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .card-body { padding: 16px; }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 10px;
+    }
+
+    .tag {
+      border: 1px solid #d8e0e8;
+      border-radius: 999px;
+      background: #eef3f7;
+      color: var(--slate);
+      padding: 3px 8px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .tag.personal { background: #e7f6f5; border-color: #b6dcd7; color: #0d5f62; }
+    .tag.home { background: #eef7ed; border-color: #c2dfc0; color: #27663b; }
+    .tag.enterprise { background: #edf2fb; border-color: #bfcee6; color: #244d82; }
+    .tag.warn { background: #fff2de; border-color: #f1ca92; color: #7a4300; }
+
+    h3 {
+      margin: 0 0 8px;
+      font-size: 20px;
+      line-height: 1.25;
+      letter-spacing: 0;
+    }
+
+    .card p {
+      margin: 0;
+      color: #31404d;
+    }
+
+    .facts {
+      display: grid;
+      gap: 8px;
+      list-style: none;
+      margin: 12px 0 0;
+      padding: 0;
+      color: #334553;
+      font-size: 14px;
+    }
+
+    .facts li {
+      border-left: 3px solid var(--teal);
+      padding-left: 10px;
+    }
+
+    .facts li.home-line { border-left-color: var(--green); }
+    .facts li.warn-line { border-left-color: var(--amber); }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      font-size: 14px;
+    }
+
+    th, td {
+      border-bottom: 1px solid var(--line);
+      padding: 11px 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: #edf2f5;
+      color: #26333f;
+      font-size: 13px;
+    }
+
+    tr:last-child td { border-bottom: 0; }
+
+    .empty {
+      border: 1px dashed #c9d4dc;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.66);
+      padding: 16px;
+      color: #495967;
+    }
+
+    .notes {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      padding: 16px;
+    }
+
+    .notes ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .notes li { margin: 7px 0; }
+
+    footer {
+      margin-top: 34px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 860px) {
+      .summary-grid,
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .card img { height: 218px; }
+      table { font-size: 13px; }
+      th, td { padding: 9px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <p class="eyebrow">AI硬件完成品日报</p>
+      <h1>过去 24 小时全球 AI 硬件成品发布与首销追踪</h1>
+      <p class="dek">本轮只纳入面向最终用户的完成品硬件。芯片、模组、服务器、云平台、纯软件功能、概念路线图、投融资消息、促销降价与昨天已收录的二次报道不进入主清单。</p>
+      <div class="meta">
+        <span class="pill">日期：2026-05-31</span>
+        <span class="pill">窗口：2026-05-30 13:01 - 2026-05-31 13:01 CST</span>
+        <span class="pill">口径：发布 / 首销 / 开售 / 可购买</span>
+        <span class="pill">语言：简体中文</span>
+      </div>
+    </header>
+
+    <div class="hero-visual">
+      <img src="assets/screening-dashboard.svg" alt="本轮 AI 硬件完成品筛选概览">
+    </div>
+
+    <div class="summary-grid">
+      <div class="metric">
+        <strong>2</strong>
+        <span>严格入选的 AI 硬件成品</span>
+      </div>
+      <div class="metric">
+        <strong>1</strong>
+        <span>个人消费者：AI 可穿戴</span>
+      </div>
+      <div class="metric">
+        <strong>1</strong>
+        <span>家庭消费者：AI 家电</span>
+      </div>
+      <div class="metric">
+        <strong>0</strong>
+        <span>企业消费者：未发现新合格成品</span>
+      </div>
+    </div>
+
+    <section>
+      <h2>个人消费者</h2>
+      <p class="section-note">便携、随身、个人工作流或生活辅助类 AI 硬件。</p>
+      <div class="cards">
+        <article class="card">
+          <img src="assets/guangfan-ai-earbuds.jpg" alt="光帆 AI 全感耳机产品图">
+          <div class="card-body">
+            <div class="tags">
+              <span class="tag personal">个人消费者</span>
+              <span class="tag">AI 耳机</span>
+              <span class="tag">5 月 31 日单品开售</span>
+            </div>
+            <h3>光帆 AI 全感耳机</h3>
+            <p>光帆 AI 全感穿戴设备的单品耳机版在 5 月 31 日进入开售节点，首发售价 1999 元。它把视觉、语音、位置、日程与消息信息作为感知输入，定位为主动式个人 AI 助理入口，而不只是传统音频外设。</p>
+            <ul class="facts">
+              <li>入选理由：单品耳机版开售日期落在本轮窗口内，且是面向个人消费者的可穿戴成品。</li>
+              <li>AI 相关能力：视觉感知购物、位置触发提醒、消息到日程、主动式任务推进、个性化陪伴。</li>
+              <li>边界说明：套装版已在 5 月 15 日开售，本轮只记录 5 月 31 日开售的耳机单品节点。</li>
+              <li>来源：<a href="https://www.geekpark.net/news/364273">极客公园</a>、<a href="https://www.ithome.com/0/948/165.htm">IT之家预热报道</a></li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>家庭消费者</h2>
+      <p class="section-note">面向家庭居住场景、以家庭成员使用为核心的 AI 硬件成品。</p>
+      <div class="cards">
+        <article class="card">
+          <img src="assets/xiaomi-mijia-ac-ultra-3hp.png" alt="小米米家空调强劲风立式超 3 匹产品图">
+          <div class="card-body">
+            <div class="tags">
+              <span class="tag home">家庭消费者</span>
+              <span class="tag">AI 家电</span>
+              <span class="tag">5 月 30 日晚开售</span>
+            </div>
+            <h3>小米米家空调强劲风立式超 3 匹</h3>
+            <p>小米米家强劲风立式超 3 匹在 5 月 30 日晚开售，标价 5999 元，国补价 5099.2 元起。产品面向大客厅和开放式客餐厅，强调超大风量、远距送风、强劲模式与米家生态联动。</p>
+            <ul class="facts">
+              <li class="home-line">入选理由：5 月 30 日 21:19 CST 开售证据明确，且是面向家庭终端用户的成品家电。</li>
+              <li class="home-line">AI 相关能力：支持超级小爱控制、全链路 OTA、智能诊断、车家联动；英文报道还提到端侧 AI 实时调节温度和气流。</li>
+              <li class="home-line">关键硬件：1800m3/h 风量、115 度广域扫风、16m 远距送风、25.1cc 双缸压缩机、APF 4.90。</li>
+              <li class="home-line">来源：<a href="https://www.ithome.com/0/957/678.htm">IT之家开售报道</a>、<a href="https://www.gizmochina.com/2026/05/30/xiaomi-mijia-powerful-wind-ultra-3hp-floor-standing-air-conditioner-launched-specs-price/">Gizmochina</a>、<a href="https://www.technobaboy.com/2026/05/31/xiaomi-unveils-powerful-floor-standing-air-conditioner/">Technobaboy</a></li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>企业消费者</h2>
+      <div class="empty">
+        本轮未发现新的、面向企业最终用户且已经发布或首销的完成品 AI 硬件。仓储机器人、商用人形机器人、工业相机、边缘终端等方向本轮主要是旧闻、投融资、路线图、展会预告或平台/基础设施消息，未进入主清单。
+      </div>
+    </section>
+
+    <section>
+      <h2>分类总表</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>分类</th>
+            <th>产品</th>
+            <th>发布 / 首销证据</th>
+            <th>AI 硬件属性</th>
+            <th>结论</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>个人消费者</td>
+            <td>光帆 AI 全感耳机</td>
+            <td>5 月 31 日单品开售，首发 1999 元</td>
+            <td>带视觉感知的主动式 AI 耳机，结合语音、位置、日程、消息等上下文</td>
+            <td>入选</td>
+          </tr>
+          <tr>
+            <td>家庭消费者</td>
+            <td>小米米家空调强劲风立式超 3 匹</td>
+            <td>5 月 30 日 21:19 CST 开售，5999 元</td>
+            <td>小爱控制、智能诊断、车家联动、OTA；端侧 AI 调温调风</td>
+            <td>入选</td>
+          </tr>
+          <tr>
+            <td>企业消费者</td>
+            <td>无</td>
+            <td>未找到本轮窗口内的新合格成品</td>
+            <td>不适用</td>
+            <td>空白</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>排除与去重</h2>
+      <div class="notes">
+        <ul>
+          <li>已排除 Nvidia / Microsoft / Arm / Qualcomm 的 Computex 相关芯片、处理器、AI PC 平台与预告；这些属于上游或待发布平台，不是终端用户可购买的完成品。</li>
+          <li>已排除 Google Gemini for Home / Nest Cam 视觉自动化、OPPO ColorOS 16、OpenAI / Anthropic / Microsoft 软件与模型更新；这些不是硬件新品。</li>
+          <li>已排除小米 H50/H50 Pro 扫地机器人、Acer AI PC / AI 眼镜、讯飞 AI 眼镜、EngineAI T800 等昨日已经收录或窗口外发布的项目。</li>
+          <li>已排除电商促销、降价、优惠券、评论榜单、Kickstarter 旧活动汇总；它们不能单独作为今天发布的成品证据。</li>
+          <li>保留“首销/开售”作为有效节点，因为它代表最终用户第一次能购买或进入零售可得状态。</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      生成时间：2026-05-31 13:01 CST。资料来自公开网页检索；产品参数以厂商和零售页面最终信息为准。
+    </footer>
+  </main>
+</body>
+</html>

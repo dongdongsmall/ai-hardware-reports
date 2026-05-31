@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760" role="img" aria-labelledby="title desc">
+  <title id="title">2026-05-31 AI hardware screening dashboard</title>
+  <desc id="desc">Screening overview for finished AI hardware products released or first sold in the last 24 hours.</desc>
+  <rect width="1400" height="760" fill="#f4f7f8"/>
+  <rect x="56" y="54" width="1288" height="652" rx="24" fill="#ffffff" stroke="#d8e1e8"/>
+  <text x="96" y="122" fill="#1d2730" font-family="-apple-system,BlinkMacSystemFont,PingFang SC,Arial,sans-serif" font-size="42" font-weight="800">2026-05-31 筛选概览</text>
+  <text x="96" y="166" fill="#5f6d7a" font-family="-apple-system,BlinkMacSystemFont,PingFang SC,Arial,sans-serif" font-size="24">窗口：2026-05-30 13:01 至 2026-05-31 13:01 CST；口径：终端用户可购买或首销的 AI 硬件成品</text>
+
+  <g transform="translate(96 228)">
+    <rect width="260" height="160" rx="18" fill="#e8f6f5" stroke="#b7dcd9"/>
+    <text x="28" y="64" fill="#0b6265" font-family="-apple-system,BlinkMacSystemFont,PingFang SC,Arial,sans-serif" font-size="56" font-weight="800">2</text>
+    <text x="28" y="108" fill="#173f42" font-family="-apple-system,BlinkMacSystemFont,PingFang SC,Arial,sans-serif" font-size="24" font-weight="700">入选成品</text>
+    <text x="28" y="140" fill="#547276" font-family="-apple-system,BlinkMacSystemFont,PingFang SC,Arial,sans-serif" font-size="18">首销 / 开售口径</text>
+  </g>
+  <g transform="translate(388 228)">
+    <rect width="260" height="160" rx="18" fill="#eef2fb" stroke="#c2cfe6"/>
+    <text x="28" y="64" fill="#244d82" font-family="-apple-system,BlinkMacSystemFont,PingFang SC,Arial,sans-serif" font-size="56" font-weight="800">1</text>
+    <text x="28" y="108" fill="#243f63" font-family="-apple-system,BlinkMacSystemFont,PingFang SC,Arial,sans-serif" font-size="24" font-weight="700">个人消费者</text>
+    <text x="28" y="140" fill="#607187" font-family="-apple-system,BlinkMacSystemFont,PingFang SC,Arial,sans-serif" font-size="18">AI 可穿戴</text>
+  </g>
+  <g transform="translate(680 228)">
+    <rect width="260" height="160" rx="18" fill="#eef8ef" stroke="#c4dfc7"/>
+    <text x="28" y="64" fill="#2d7342" font-family="-apple-system,BlinkMacSystemFont,PingFang SC,Arial,sans-serif" font-size="56" font-weight="800">1</text>
+    <text x="28" y="108" fill="#34553b" font-family="-apple-system,BlinkMacSystemFont,PingFang SC,Arial,sans-serif" font-size="24" font-weight="700">家庭消费者</text>
+    <text x="28" y="140" fill="#607e64" font-family="-apple-system,BlinkMacSystemFont,PingFang SC,Arial,sans-serif" font-size="18">AI 家电</text>
+  </g>
+  <g transform="translate(972 228)">
+    <rect width="260" height="160" rx="18" fill="#fff3df" stroke="#ecc990"/>
+    <text x="28" y="64" fill="#9a5a07" font-family="-apple-system,BlinkMacSystemFont,PingFang SC,Arial,sans-serif" font-size="56" font-weight="800">0</text>
+    <text x="28" y="108" fill="#6b481d" font-family="-apple-system,BlinkMacSystemFont,PingFang SC,Arial,sans-serif" font-size="24" font-weight="700">企业消费者</text>
+    <text x="28" y="140" fill="#866f4f" font-family="-apple-system,BlinkMacSystemFont,PingFang SC,Arial,sans-serif" font-size="18">无新合格成品</text>
+  </g>
+
+  <g transform="translate(96 456)">
+    <text x="0" y="0" fill="#1d2730" font-family="-apple-system,BlinkMacSystemFont,PingFang SC,Arial,sans-serif" font-size="28" font-weight="800">边界处理</text>
+    <rect x="0" y="28" width="1192" height="142" rx="18" fill="#f8fafb" stroke="#d8e1e8"/>
+    <text x="28" y="76" fill="#334553" font-family="-apple-system,BlinkMacSystemFont,PingFang SC,Arial,sans-serif" font-size="22">已排除：芯片 / GPU / AI 云和算力平台、纯软件更新、投融资与路线图、促销降价、昨日已收录的二次报道。</text>
+    <text x="28" y="116" fill="#334553" font-family="-apple-system,BlinkMacSystemFont,PingFang SC,Arial,sans-serif" font-size="22">保留：面向个人或家庭用户的完成品硬件，且在窗口内出现首销、开售或可购买证据。</text>
+    <text x="28" y="156" fill="#334553" font-family="-apple-system,BlinkMacSystemFont,PingFang SC,Arial,sans-serif" font-size="22">企业类：本轮未找到新的仓储机器人、商用机器人、行业终端等可确认发布/首销成品。</text>
+  </g>
+</svg>
