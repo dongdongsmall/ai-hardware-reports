@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI硬件日报 2026-06-02：过去24小时全球终端完成品发布与开售</title>
+  <meta property="og:title" content="AI硬件日报 2026-06-02：过去24小时全球终端完成品发布与开售">
+  <meta property="og:description" content="11 纳入主清单的终端产品/产品簇；6 首批 RTX Spark 终端 PC 机型被点名；1 家庭清洁机器人出现区域可购买节点">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://dongdongsmall.github.io/ai-hardware-reports/2026-06-02/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:image" content="https://dongdongsmall.github.io/ai-hardware-reports/2026-06-02/assets/microsoft-surface-laptop-ultra.png">
+  <meta name="twitter:image" content="https://dongdongsmall.github.io/ai-hardware-reports/2026-06-02/assets/microsoft-surface-laptop-ultra.png">
+  <style>
+    :root {
+      --ink: #17202a;
+      --muted: #64707d;
+      --line: #d8e0e6;
+      --paper: #f4f7f4;
+      --panel: #ffffff;
+      --blue: #245f79;
+      --green: #3f7459;
+      --gold: #9a6a22;
+      --red: #aa463d;
+      --shadow: 0 18px 44px rgba(34, 55, 68, .12);
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      line-height: 1.65;
+    }
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    header {
+      color: #fff;
+      background:
+        linear-gradient(115deg, rgba(18, 42, 56, .94), rgba(58, 104, 81, .86)),
+        url("assets/asus-proart-p16-p14-rtx-spark.png") center / cover;
+      padding: 46px 22px 40px;
+    }
+    .wrap { max-width: 1160px; margin: 0 auto; }
+    .eyebrow {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 20px;
+      color: rgba(255,255,255,.9);
+      font-size: 13px;
+    }
+    .pill {
+      border: 1px solid rgba(255,255,255,.35);
+      border-radius: 999px;
+      padding: 5px 10px;
+      background: rgba(255,255,255,.13);
+      backdrop-filter: blur(8px);
+    }
+    h1 {
+      max-width: 960px;
+      margin: 0;
+      font-size: clamp(32px, 5.8vw, 62px);
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+    .dek {
+      max-width: 840px;
+      margin: 20px 0 0;
+      color: rgba(255,255,255,.9);
+      font-size: 18px;
+    }
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 28px;
+    }
+    .metric {
+      border: 1px solid rgba(255,255,255,.28);
+      background: rgba(255,255,255,.14);
+      padding: 14px 16px;
+      border-radius: 8px;
+      min-height: 104px;
+    }
+    .metric strong {
+      display: block;
+      font-size: 34px;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .metric span { color: rgba(255,255,255,.87); font-size: 13px; }
+    main { padding: 34px 22px 56px; }
+    section { margin: 26px 0 40px; }
+    h2 {
+      margin: 0 0 14px;
+      font-size: 26px;
+      line-height: 1.2;
+      letter-spacing: 0;
+    }
+    .section-note {
+      margin: 0 0 18px;
+      color: var(--muted);
+      max-width: 920px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+    }
+    .card img {
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      object-fit: cover;
+      display: block;
+      background: #dde6ea;
+    }
+    .card-body { padding: 18px; }
+    .tags { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 12px; }
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      padding: 3px 9px;
+      background: #eef5f1;
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 650;
+    }
+    .tag.blue { background: #edf4f8; color: var(--blue); }
+    .tag.gold { background: #fff4dc; color: var(--gold); }
+    .tag.red { background: #fff0ee; color: var(--red); }
+    h3 {
+      margin: 0 0 10px;
+      font-size: 21px;
+      line-height: 1.25;
+      letter-spacing: 0;
+    }
+    .card p { margin: 0 0 12px; color: #303b45; }
+    ul { margin: 0; padding-left: 19px; }
+    li { margin: 6px 0; }
+    .takeaway {
+      background: linear-gradient(135deg, #ffffff, #edf5f2);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: var(--shadow);
+    }
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 10px 28px rgba(39, 62, 75, .08);
+    }
+    th, td {
+      text-align: left;
+      vertical-align: top;
+      padding: 12px 13px;
+      border-bottom: 1px solid var(--line);
+      font-size: 14px;
+    }
+    th {
+      color: #fff;
+      background: #254f68;
+      font-weight: 700;
+    }
+    tr:last-child td { border-bottom: 0; }
+    footer {
+      color: var(--muted);
+      font-size: 13px;
+      border-top: 1px solid var(--line);
+      padding-top: 18px;
+    }
+    @media (max-width: 900px) {
+      header { padding-top: 36px; }
+      .metrics, .grid, .two-col { grid-template-columns: 1fr; }
+      .metric { min-height: auto; }
+      table, thead, tbody, th, td, tr { display: block; }
+      thead { display: none; }
+      tr { border-bottom: 1px solid var(--line); }
+      td { border: 0; padding: 8px 12px; }
+      td::before {
+        content: attr(data-label);
+        display: block;
+        font-weight: 700;
+        color: var(--muted);
+        margin-bottom: 2px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="eyebrow">
+        <span class="pill">AI硬件，每日推送</span>
+        <span class="pill">时间窗：2026-06-01 13:06 - 2026-06-02 13:06 CST</span>
+        <span class="pill">口径：发布 / 上市 / 首销 / 可购买</span>
+      </div>
+      <h1>2026 年 6 月 2 日：全球终端 AI 硬件完成品日报</h1>
+      <p class="dek">今天的完成品信号高度集中在 Computex / GTC Taipei：个人 AI PC 从“芯片发布”进一步落到 OEM 终端机型；家庭类出现 Dyson 马来西亚可购买节点；企业类以商用 AI PC、医疗手持设备和桌面级本地 AI 计算终端为主。</p>
+      <div class="metrics">
+        <div class="metric"><strong>11</strong><span>纳入主清单的终端产品/产品簇</span></div>
+        <div class="metric"><strong>6</strong><span>首批 RTX Spark 终端 PC 机型被点名</span></div>
+        <div class="metric"><strong>1</strong><span>家庭清洁机器人出现区域可购买节点</span></div>
+        <div class="metric"><strong>8</strong><span>芯片、平台、模块和概念演示被排除</span></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <section>
+        <h2>个人消费者</h2>
+        <p class="section-note">个人类只收录有明确终端机型、用途面向个人创作/学习/娱乐/健康的完成品。RTX Spark 本身按芯片排除，但搭载它的命名 PC 终端纳入。</p>
+        <div class="grid">
+          <article class="card">
+            <img src="assets/microsoft-surface-laptop-ultra.png" alt="Microsoft Surface Laptop Ultra 官方博客配图">
+            <div class="card-body">
+              <div class="tags">
+                <span class="tag">个人 AI PC</span>
+                <span class="tag blue">Surface / Lenovo / ASUS / Dell / HP / MSI</span>
+              </div>
+              <h3>RTX Spark 首批个人 AI PC 终端阵列</h3>
+              <p>Microsoft 与 NVIDIA 将 RTX Spark 从平台发布落到一组终端 PC：Surface Laptop Ultra、ASUS ProArt P16、Dell XPS 16、HP OmniBook X 14、Lenovo Yoga Pro 9n、MSI Prestige N16 Flip AI+ 等被列入首批设备。</p>
+              <ul>
+                <li>AI 要点：面向本地个人代理、创作应用、AI 开发和游戏，官方称支持最高 128GB 统一内存和完整 RTX / CUDA 软件栈。</li>
+                <li>边界说明：芯片本体不计入；这里按“已命名的终端 PC 机型”计入，预计从秋季开始上市。</li>
+                <li>来源：<a href="https://blogs.windows.com/windowsexperience/2026/05/31/introducing-a-powerful-new-chapter-for-windows-pcs-accelerated-by-nvidia-rtx-spark/">Windows Experience Blog</a>、<a href="https://nvidianews.nvidia.com/news/nvidia-microsoft-windows-pcs-agents-rtx-spark">NVIDIA Newsroom</a></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="assets/asus-proart-p16-p14-rtx-spark.png" alt="ASUS ProArt P16 与 P14 RTX Spark 创作者 AI 笔记本">
+            <div class="card-body">
+              <div class="tags">
+                <span class="tag">创作者 AI 笔记本</span>
+                <span class="tag blue">Computex 发布</span>
+              </div>
+              <h3>ASUS ProArt P16 / P14</h3>
+              <p>ASUS 发布 ProArt P16 与 P14，定位为首批搭载 NVIDIA RTX Spark 的 ASUS 创作者笔记本，面向本地 AI 代理、AI 原生创作流程和移动创作。</p>
+              <ul>
+                <li>AI 要点：ProArt Creator Hub、MuseTree、StoryCube 等 AI 辅助工作流与 RTX Spark 硬件结合。</li>
+                <li>硬件要点：ASUS Lumina Pro OLED、Nano Black / Neo White 外观，部分地区预计 2026 年秋季开始供应。</li>
+                <li>来源：<a href="https://press.asus.com/news/press-releases/asus-computex-2026-ai-pc-lineup-proart-rtx-spark-zenbook-vivobook/">ASUS Pressroom</a></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="assets/msi-prestige-n16-flip-ai.png" alt="MSI Prestige N16 Flip AI+ 笔记本">
+            <div class="card-body">
+              <div class="tags">
+                <span class="tag">2 合 1 AI 笔记本</span>
+                <span class="tag blue">MSI 首款 RTX Spark</span>
+              </div>
+              <h3>MSI Prestige N16 Flip AI+</h3>
+              <p>MSI 在 Computex 2026 发布 Prestige N16 Flip AI+，这是其首款 RTX Spark 笔记本，面向创作者、AI 开发者和移动娱乐场景。</p>
+              <ul>
+                <li>AI 要点：官方写明支持本地个人代理、大模型、生成式 AI 应用和 AI 增强生产力。</li>
+                <li>硬件要点：16 英寸 UHD+ Tandem OLED、99.9Wh 电池、MSI Nano Pen、Action Touchpad、翻转机身。</li>
+                <li>来源：<a href="https://www.msi.com/news/detail/MSI-Partners-with-NVIDIA-to-Unveil-Its-First-Laptop-Powered-by-NVIDIA-RTX-Spark-at-COMPUTEX-2026-148992">MSI 官方新闻</a>；配图来自 <a href="https://www.notebookcheck.net/MSI-unveils-world-s-first-16-inch-2-in-1-RTX-Spark-laptop-Stylus-support-99-9-Wh-battery.1312203.0.html">Notebookcheck</a></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="assets/dell-xps-16-creator-edition.jpg" alt="Dell XPS 16 Creator Edition">
+            <div class="card-body">
+              <div class="tags">
+                <span class="tag">创作者 AI 笔记本</span>
+                <span class="tag gold">XPS 进入高性能创作线</span>
+              </div>
+              <h3>Dell XPS 16 Creator Edition</h3>
+              <p>Dell 给出 XPS 16 Creator Edition 的 Computex 首秀，明确写作由 NVIDIA RTX Spark 驱动，面向创作者与开发者的移动高性能工作。</p>
+              <ul>
+                <li>AI 要点：本地 AI 与创作工作流，面向 4K 时间线、复杂 3D 场景、合成和 AI 辅助创作。</li>
+                <li>硬件要点：Tandem OLED、True Black HDR 600、HDMI、SD 读卡器，强调外场创作可用性。</li>
+                <li>来源：<a href="https://www.dell.com/en-us/blog/dell-and-nvidia-bring-serious-performance-to-creators/">Dell 官方博客</a></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="assets/hp-omnibook-rtx-spark.jpg" alt="HP OmniBook RTX Spark 新闻配图">
+            <div class="card-body">
+              <div class="tags">
+                <span class="tag">个人 AI PC</span>
+                <span class="tag gold">稍后上市</span>
+              </div>
+              <h3>HP OmniBook Ultra 16 / OmniBook X 14</h3>
+              <p>HP 官方宣布将把 RTX Spark 带到 OmniBook Ultra 16 与 OmniBook X 14，两款机型面向创作者、玩家和 AI 开发者，强调安全本地处理和代理工作流。</p>
+              <ul>
+                <li>AI 要点：本地代理、AI 创作、AI 开发与混合 Windows 工作流。</li>
+                <li>可得性：官方写明预计 2026 年稍后上市，细节与价格后续公布。</li>
+                <li>来源：<a href="https://www.hp.com/us-en/newsroom/press-releases/2026/computex.html">HP 官方新闻稿</a></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="assets/asus-vivowatch-duoscan.jpg" alt="ASUS VivoWatch 6 Plus 与 Handheld Ultrasound DuoScan">
+            <div class="card-body">
+              <div class="tags">
+                <span class="tag">个人健康穿戴</span>
+                <span class="tag blue">新医疗 AI 生态</span>
+              </div>
+              <h3>ASUS VivoWatch 6 Plus</h3>
+              <p>ASUS 在医疗 AI 发布中推出 VivoWatch 6 Plus，作为个人健康层的连续数据采集终端，接入更大的 ASUS Healthcare AI 系统。</p>
+              <ul>
+                <li>AI 要点：睡眠呼吸动作、步态分析、实时反馈与个性化健康洞察，为医疗 AI 代理提供连续生理数据入口。</li>
+                <li>硬件要点：1.43 英寸 AMOLED、蓝宝石玻璃、钛合金表壳，保留血压与 ECG 监测能力。</li>
+                <li>来源：<a href="https://press.asus.com/news/press-releases/asus-com-news-ai-driven-healthcare-computex/">ASUS Healthcare AI 新闻稿</a></li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2>家庭消费者</h2>
+        <p class="section-note">家庭类优先收录家用清洁、家庭计算和客厅/书房场景中的可落地硬件。普通促销、旧款复述和无明确发布节点不计入。</p>
+        <div class="grid">
+          <article class="card">
+            <img src="assets/dyson-spot-scrub-ai.jpg" alt="Dyson Spot+Scrub Ai 扫拖机器人">
+            <div class="card-body">
+              <div class="tags">
+                <span class="tag">扫拖机器人</span>
+                <span class="tag blue">马来西亚可购买</span>
+              </div>
+              <h3>Dyson Spot+Scrub Ai</h3>
+              <p>Dyson 马来西亚页面显示 Spot+Scrub Ai 为 New / Latest technology 且 In stock，区域媒体同步称马来西亚消费者现可购买，促销价 RM4,799。</p>
+              <ul>
+                <li>AI 要点：AI 摄像头识别污渍、近 200 类物体/障碍识别、LiDAR 与 AI 视觉建图规划。</li>
+                <li>清洁要点：自清洁湿滚筒、12 点供水、40mm 边缘外伸、自动集尘/清洗/烘干底座。</li>
+                <li>来源：<a href="https://www.dyson.my/spot-scrub-ai-black">Dyson Malaysia 产品页</a>、<a href="https://www.myeverydaytech.com/dyson-spots-crub-ai-malaysia-launched/">MyEverydayTech 区域报道</a></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="assets/asus-vivobook-s16-ai.jpg" alt="ASUS Vivobook S16 生活场景图">
+            <div class="card-body">
+              <div class="tags">
+                <span class="tag">家庭 AI PC</span>
+                <span class="tag gold">桌面 / 一体机 / 学习</span>
+              </div>
+              <h3>ASUS V700 / V200 AiO / V400 AiO</h3>
+              <p>ASUS 的消费 AI PC 发布中包含 V700 Mini Tower、V200 AiO 与 V400 AiO，明确定位家庭空间、日常生产力、学习、娱乐和通信。</p>
+              <ul>
+                <li>AI 要点：V400 AiO 采用 Snapdragon 平台提供 AI 能力；V200 AiO 标出 AI 降噪用于在线会议与虚拟学习。</li>
+                <li>家庭要点：V700 主打木纹和安静散热；V200 / V400 是节省空间的一体机家庭计算终端。</li>
+                <li>来源：<a href="https://press.asus.com/news/press-releases/asus-computex-2026-ai-pc-lineup-proart-rtx-spark-zenbook-vivobook/">ASUS 消费 AI PC 新闻稿</a></li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2>企业消费者</h2>
+        <p class="section-note">企业类只收录“最终用户可部署的设备”：商用笔记本、医疗终端、桌面/小型本地 AI 计算设备。AI 服务器、机架、芯片、网络控制器和平台服务不进主清单。</p>
+        <div class="grid">
+          <article class="card">
+            <img src="assets/asus-expertbook-b5-flip-g2.jpg" alt="ASUS ExpertBook B5 Flip G2 商用翻转笔记本">
+            <div class="card-body">
+              <div class="tags">
+                <span class="tag">商用 AI 笔记本</span>
+                <span class="tag blue">企业 / 教育</span>
+              </div>
+              <h3>ASUS ExpertBook B5 Flip G2</h3>
+              <p>ASUS 今日发布 ExpertBook B5 Flip G2，定位商用专业人士、学生与教育者的 360 度翻转笔记本，强调 AI 加速生产力与企业级安全。</p>
+              <ul>
+                <li>AI 要点：Intel Core 7 Series 3，18 TOPS NPU，AI 音频降噪和企业部署工具。</li>
+                <li>硬件要点：内置 MPP 2.0 手写笔、双摄、WiFi 7、1.34kg 铝合金机身、MIL-STD 810H。</li>
+                <li>来源：<a href="https://press.asus.com/news/press-releases/asus-expertbook-b5-flip-g2-ai-business-laptop/">ASUS ExpertBook 官方新闻稿</a></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="assets/asus-vivowatch-duoscan.jpg" alt="ASUS Handheld Ultrasound DuoScan 手持超声">
+            <div class="card-body">
+              <div class="tags">
+                <span class="tag">医疗 AI 终端</span>
+                <span class="tag blue">临床一线</span>
+              </div>
+              <h3>ASUS Handheld Ultrasound DuoScan</h3>
+              <p>DuoScan 是 ASUS 医疗 AI 生态里的新手持超声终端，面向 ER、ICU、居家护理等临床环境，承担“从传感到决策”的数据入口。</p>
+              <ul>
+                <li>AI 要点：与 ASUS AI Agent 医疗平台连接，将患者数据转为实时临床决策输入。</li>
+                <li>硬件要点：192 阵元高清成像、无线双探头、IP68 防护、最长 3 小时便携运行。</li>
+                <li>来源：<a href="https://press.asus.com/news/press-releases/asus-com-news-ai-driven-healthcare-computex/">ASUS Healthcare AI 新闻稿</a></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="assets/asus-ascent-gx10.png" alt="ASUS Ascent GX10 AI 计算终端">
+            <div class="card-body">
+              <div class="tags">
+                <span class="tag">桌面 AI 计算终端</span>
+                <span class="tag gold">企业 / 开发者</span>
+              </div>
+              <h3>ASUS Ascent GX10 / QN10 / NUC 16 Pro</h3>
+              <p>ASUS 把本地代理与小型 AI 计算放到桌面：Ascent GX10、Ascent QN10、ExpertCenter PN55、NUC 16 Pro 等产品面向企业、创作者和开发者的本地 AI 工作负载。</p>
+              <ul>
+                <li>AI 要点：GX10 面向 agentic AI；QN10 是 Qualcomm 平台 AI Mini PC，标称 80 TOPS NPU；NUC 16 Pro 支持本地优先的混合 AI 代理编排。</li>
+                <li>边界说明：这些是桌面/小型终端设备，和机架级 AI factory、服务器平台分开处理。</li>
+                <li>来源：<a href="https://press.asus.com/news/press-releases/asus-computex-2026-enterprise-to-edge-ai/">ASUS Enterprise-to-Edge AI 新闻稿</a></li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2>边界与排除</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>候选/热词</th>
+              <th>处理</th>
+              <th>原因</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="候选/热词">NVIDIA RTX Spark / MediaTek 合作本身</td>
+              <td data-label="处理">芯片排除，终端纳入</td>
+              <td data-label="原因">RTX Spark 是上游 SoC；只有 Surface、XPS、OmniBook、ProArt、Prestige 等具体 PC 机型进入主清单。</td>
+            </tr>
+            <tr>
+              <td data-label="候选/热词">NVIDIA Vera Rubin NVL72、AI factory、服务器机架</td>
+              <td data-label="处理">排除</td>
+              <td data-label="原因">数据中心和 AI 工厂基础设施，不是面向最终用户的终端完成品。</td>
+            </tr>
+            <tr>
+              <td data-label="候选/热词">HP ZGX Fury GB300 / DGX Station for Windows</td>
+              <td data-label="处理">排除主清单</td>
+              <td data-label="原因">虽是桌侧/工作站级硬件，但更接近企业 AI 基础设施与超算节点，本轮不按消费终端处理。</td>
+            </tr>
+            <tr>
+              <td data-label="候选/热词">Z-COM NEW edge-native infrastructure platform</td>
+              <td data-label="处理">排除</td>
+              <td data-label="原因">网络、边缘基础设施和运营平台，不是用户侧成品 AI 硬件。</td>
+            </tr>
+            <tr>
+              <td data-label="候选/热词">YPlasma DBD Jetson 散热方案</td>
+              <td data-label="处理">排除</td>
+              <td data-label="原因">散热组件/模块，属于上游零部件。</td>
+            </tr>
+            <tr>
+              <td data-label="候选/热词">Micron、Lexar、ZHITAI、Phison AI 存储与内存</td>
+              <td data-label="处理">排除</td>
+              <td data-label="原因">SSD、DRAM、存储控制或解决方案，属于部件/平台，不是完整终端设备。</td>
+            </tr>
+            <tr>
+              <td data-label="候选/热词">Kneron 3D Binocular Face Recognition Module</td>
+              <td data-label="处理">排除</td>
+              <td data-label="原因">模块/解决方案形态，缺少面向最终用户的完整产品外壳与购买路径。</td>
+            </tr>
+            <tr>
+              <td data-label="候选/热词">ASUS Kairo / Next-Generation Companion Robot</td>
+              <td data-label="处理">观察</td>
+              <td data-label="原因">现场展示信号清晰，但缺少今天明确发布的终端 SKU、售价、上市或部署节点。</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>今天的判断</h2>
+        <div class="two-col">
+          <div class="takeaway">
+            <h3>个人端：AI PC 终于从“平台”落到“机型”</h3>
+            <p>今天最重要的变化不是又一个芯片名，而是 Surface、ASUS、Dell、HP、Lenovo、MSI 等 OEM 终端同时被点名。对用户来说，AI 代理、本地大模型和创作加速开始进入可购买 PC 的产品线规划。</p>
+          </div>
+          <div class="takeaway">
+            <h3>家庭端：清洁机器人仍是最清晰的 AI 硬件入口</h3>
+            <p>Dyson Spot+Scrub Ai 的价值不在“会聊天”，而在能识别污渍、判断是否清干净并自动补洗。家庭 AI 硬件继续优先落在能减少家务摩擦的场景。</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>主要来源</h2>
+        <ul>
+          <li><a href="https://blogs.windows.com/windowsexperience/2026/05/31/introducing-a-powerful-new-chapter-for-windows-pcs-accelerated-by-nvidia-rtx-spark/">Microsoft Windows Experience Blog：RTX Spark Windows PC 与 Surface Laptop Ultra</a></li>
+          <li><a href="https://nvidianews.nvidia.com/news/nvidia-microsoft-windows-pcs-agents-rtx-spark">NVIDIA Newsroom：RTX Spark PC 生态与 OEM 终端名单</a></li>
+          <li><a href="https://press.asus.com/news/press-releases/asus-computex-2026-ai-pc-lineup-proart-rtx-spark-zenbook-vivobook/">ASUS Pressroom：ProArt、Zenbook、Vivobook、V 系列与 ASUS AI apps</a></li>
+          <li><a href="https://www.msi.com/news/detail/MSI-Partners-with-NVIDIA-to-Unveil-Its-First-Laptop-Powered-by-NVIDIA-RTX-Spark-at-COMPUTEX-2026-148992">MSI：Prestige N16 Flip AI+ 官方发布</a></li>
+          <li><a href="https://www.dell.com/en-us/blog/dell-and-nvidia-bring-serious-performance-to-creators/">Dell：XPS 16 Creator Edition 与 NVIDIA RTX Spark</a></li>
+          <li><a href="https://www.hp.com/us-en/newsroom/press-releases/2026/computex.html">HP：OmniBook / OmniDesk / ZGX Nano AI 设备与 RTX Spark 计划</a></li>
+          <li><a href="https://press.asus.com/news/press-releases/asus-expertbook-b5-flip-g2-ai-business-laptop/">ASUS：ExpertBook B5 Flip G2 商用 AI 笔记本</a></li>
+          <li><a href="https://press.asus.com/news/press-releases/asus-com-news-ai-driven-healthcare-computex/">ASUS：Handheld Ultrasound DuoScan 与 VivoWatch 6 Plus 医疗 AI 生态</a></li>
+          <li><a href="https://press.asus.com/news/press-releases/asus-computex-2026-enterprise-to-edge-ai/">ASUS：Enterprise-to-Edge AI、Ascent GX10/QN10、NUC 16 Pro</a></li>
+          <li><a href="https://www.dyson.my/spot-scrub-ai-black">Dyson Malaysia：Spot+Scrub Ai 产品页</a></li>
+          <li><a href="https://www.myeverydaytech.com/dyson-spots-crub-ai-malaysia-launched/">MyEverydayTech：Dyson Spot+Scrub Ai 马来西亚可购买报道</a></li>
+        </ul>
+      </section>
+
+      <footer>
+        图片已本地化到 assets/ 目录。筛选继续使用“面向最终用户的完成品 AI 硬件”口径：芯片、服务器、AI 工厂、开发板、网络设备、纯软件、服务平台、融资、路线图、概念演示与促销信息不计入主清单。
+      </footer>
+    </div>
+  </main>
+</body>
+</html>
