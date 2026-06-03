@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820" role="img" aria-label="AI hardware screening dashboard">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f6f4ee"/>
+      <stop offset="1" stop-color="#e6eef0"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#25415a" flood-opacity=".18"/>
+    </filter>
+  </defs>
+  <rect width="1400" height="820" fill="url(#bg)"/>
+  <rect x="70" y="70" width="1260" height="660" rx="24" fill="#ffffff" filter="url(#shadow)"/>
+  <text x="120" y="132" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="36" font-weight="800" fill="#17202a">过去 24 小时筛选结果</text>
+  <text x="120" y="174" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="20" fill="#60717d">口径：终端完成品；排除芯片、平台、概念、纯软件、上游模块与非当日节点</text>
+
+  <g transform="translate(120 235)">
+    <rect width="330" height="170" rx="16" fill="#edf5f1"/>
+    <text x="28" y="58" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="56" font-weight="900" fill="#2e6d51">1</text>
+    <text x="28" y="100" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="24" font-weight="750" fill="#17202a">纳入主清单</text>
+    <text x="28" y="136" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="18" fill="#41515d">完整硬件 + 明确发布节点</text>
+  </g>
+
+  <g transform="translate(505 235)">
+    <rect width="330" height="170" rx="16" fill="#eef3f8"/>
+    <text x="28" y="58" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="56" font-weight="900" fill="#245f79">8</text>
+    <text x="28" y="100" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="24" font-weight="750" fill="#17202a">排除或观察</text>
+    <text x="28" y="136" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="18" fill="#41515d">平台、部件、概念或过窗</text>
+  </g>
+
+  <g transform="translate(890 235)">
+    <rect width="330" height="170" rx="16" fill="#fff3dc"/>
+    <text x="28" y="58" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="56" font-weight="900" fill="#9a6a22">2</text>
+    <text x="28" y="100" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="24" font-weight="750" fill="#17202a">空分类</text>
+    <text x="28" y="136" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="18" fill="#41515d">个人、家庭暂无新成品</text>
+  </g>
+
+  <g transform="translate(120 478)">
+    <rect width="1100" height="94" rx="14" fill="#f8faf9" stroke="#d9e1e4"/>
+    <circle cx="44" cy="47" r="18" fill="#2e6d51"/>
+    <text x="38" y="55" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="22" font-weight="900" fill="#fff">1</text>
+    <text x="82" y="41" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="22" font-weight="800" fill="#17202a">企业消费者：Surface RTX Spark Dev Box</text>
+    <text x="82" y="69" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="17" fill="#60717d">面向 AI 开发者的桌面级本地模型开发盒，Microsoft Build 发布，后续在美国 Microsoft.com 销售。</text>
+  </g>
+
+  <g transform="translate(120 602)">
+    <rect width="260" height="56" rx="28" fill="#eef3f8"/>
+    <text x="30" y="37" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="18" font-weight="750" fill="#245f79">个人消费者：无纳入</text>
+    <rect x="300" width="260" height="56" rx="28" fill="#fff3dc"/>
+    <text x="330" y="37" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="18" font-weight="750" fill="#9a6a22">家庭消费者：无纳入</text>
+    <rect x="600" width="305" height="56" rx="28" fill="#edf5f1"/>
+    <text x="630" y="37" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="18" font-weight="750" fill="#2e6d51">企业消费者：1 个纳入项</text>
+  </g>
+</svg>

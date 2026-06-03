@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI硬件日报 2026-06-03：过去24小时全球终端完成品发布与开售</title>
+  <meta property="og:title" content="AI硬件日报 2026-06-03：过去24小时全球终端完成品发布与开售">
+  <meta property="og:description" content="1 纳入主清单的终端完成品；0 个人消费者新增高置信成品；0 家庭消费者新增高置信成品">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://dongdongsmall.github.io/ai-hardware-reports/2026-06-03/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:image" content="https://dongdongsmall.github.io/ai-hardware-reports/2026-06-03/assets/screening-dashboard.svg">
+  <meta name="twitter:image" content="https://dongdongsmall.github.io/ai-hardware-reports/2026-06-03/assets/screening-dashboard.svg">
+  <style>
+    :root {
+      --ink: #17202a;
+      --muted: #60717d;
+      --line: #d8e0e6;
+      --paper: #f4f6f1;
+      --panel: #ffffff;
+      --blue: #245f79;
+      --green: #3f7459;
+      --gold: #9a6a22;
+      --red: #a84a42;
+      --shadow: 0 18px 44px rgba(34, 55, 68, .12);
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      line-height: 1.65;
+    }
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    header {
+      color: #fff;
+      background:
+        linear-gradient(115deg, rgba(14, 31, 42, .95), rgba(44, 78, 72, .86)),
+        url("assets/surface-rtx-spark-dev-box.jpg") center / cover;
+      padding: 46px 22px 42px;
+    }
+    .wrap { max-width: 1160px; margin: 0 auto; }
+    .eyebrow {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 20px;
+      color: rgba(255,255,255,.92);
+      font-size: 13px;
+    }
+    .pill {
+      border: 1px solid rgba(255,255,255,.34);
+      border-radius: 999px;
+      padding: 5px 10px;
+      background: rgba(255,255,255,.14);
+      backdrop-filter: blur(8px);
+    }
+    h1 {
+      max-width: 980px;
+      margin: 0;
+      font-size: clamp(32px, 5.8vw, 62px);
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+    .dek {
+      max-width: 880px;
+      margin: 20px 0 0;
+      color: rgba(255,255,255,.9);
+      font-size: 18px;
+    }
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 28px;
+    }
+    .metric {
+      border: 1px solid rgba(255,255,255,.28);
+      background: rgba(255,255,255,.14);
+      padding: 14px 16px;
+      border-radius: 8px;
+      min-height: 104px;
+    }
+    .metric strong {
+      display: block;
+      font-size: 34px;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .metric span { color: rgba(255,255,255,.88); font-size: 13px; }
+    main { padding: 34px 22px 56px; }
+    section { margin: 26px 0 40px; }
+    h2 {
+      margin: 0 0 14px;
+      font-size: 26px;
+      line-height: 1.2;
+      letter-spacing: 0;
+    }
+    .section-note {
+      margin: 0 0 18px;
+      color: var(--muted);
+      max-width: 920px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .grid.one { grid-template-columns: minmax(0, 1fr); max-width: 780px; }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+    }
+    .card img {
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      object-fit: cover;
+      display: block;
+      background: #dde6ea;
+    }
+    .card-body { padding: 18px; }
+    .tags { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 12px; }
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      padding: 3px 9px;
+      background: #eef5f1;
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 650;
+    }
+    .tag.blue { background: #edf4f8; color: var(--blue); }
+    .tag.gold { background: #fff4dc; color: var(--gold); }
+    .tag.red { background: #fff0ee; color: var(--red); }
+    h3 {
+      margin: 0 0 10px;
+      font-size: 21px;
+      line-height: 1.25;
+      letter-spacing: 0;
+    }
+    .card p { margin: 0 0 12px; color: #303b45; }
+    ul { margin: 0; padding-left: 19px; }
+    li { margin: 6px 0; }
+    .takeaway {
+      background: linear-gradient(135deg, #ffffff, #edf5f2);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: var(--shadow);
+    }
+    .visual {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      display: block;
+      box-shadow: var(--shadow);
+      background: #fff;
+    }
+    .empty {
+      border: 1px dashed #b8c6ce;
+      border-radius: 8px;
+      padding: 18px;
+      background: rgba(255,255,255,.66);
+      color: #3a4954;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 10px 28px rgba(39, 62, 75, .08);
+    }
+    th, td {
+      text-align: left;
+      vertical-align: top;
+      padding: 12px 13px;
+      border-bottom: 1px solid var(--line);
+      font-size: 14px;
+    }
+    th {
+      color: #fff;
+      background: #254f68;
+      font-weight: 700;
+    }
+    tr:last-child td { border-bottom: 0; }
+    footer {
+      color: var(--muted);
+      font-size: 13px;
+      border-top: 1px solid var(--line);
+      padding-top: 18px;
+    }
+    @media (max-width: 900px) {
+      header { padding-top: 36px; }
+      .metrics, .grid, .grid.one { grid-template-columns: 1fr; max-width: none; }
+      .metric { min-height: auto; }
+      table, thead, tbody, th, td, tr { display: block; }
+      thead { display: none; }
+      tr { border-bottom: 1px solid var(--line); }
+      td { border: 0; padding: 8px 12px; }
+      td::before {
+        content: attr(data-label);
+        display: block;
+        font-weight: 700;
+        color: var(--muted);
+        margin-bottom: 2px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="eyebrow">
+        <span class="pill">AI硬件，每日推送</span>
+        <span class="pill">时间窗：2026-06-02 13:00 - 2026-06-03 13:06 CST</span>
+        <span class="pill">口径：全球发布 / 上市 / 首销 / 可购买</span>
+      </div>
+      <h1>2026 年 6 月 3 日：全球终端 AI 硬件完成品日报</h1>
+      <p class="dek">今天的高置信终端完成品信号很少。严格排除芯片、平台、概念设备、研究部件、纯软件和窗口外节点后，主清单只纳入 Microsoft Surface RTX Spark Dev Box；个人消费者和家庭消费者分类暂无新的合格完成品。</p>
+      <div class="metrics">
+        <div class="metric"><strong>1</strong><span>纳入主清单的终端完成品</span></div>
+        <div class="metric"><strong>0</strong><span>个人消费者新增高置信成品</span></div>
+        <div class="metric"><strong>0</strong><span>家庭消费者新增高置信成品</span></div>
+        <div class="metric"><strong>8</strong><span>平台、部件、概念或过窗信号被排除</span></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <section>
+        <h2>筛选概览</h2>
+        <p class="section-note">今天有大量 AI PC、机器人和智能体平台报道，但多数是上游芯片、软件运行时、展示平台、研究部件或尚未正式商业发布的概念设备。下图是按“最终用户完成品”口径后的结果。</p>
+        <img class="visual" src="assets/screening-dashboard.svg" alt="过去24小时AI硬件筛选概览">
+      </section>
+
+      <section>
+        <h2>个人消费者</h2>
+        <div class="empty">
+          <strong>无新增高置信纳入项。</strong> MSI Stealth 16 AI+ 的全球可售报道发布时间为 2026-06-02 00:08 UTC（2026-06-02 08:08 CST），早于本次窗口；MemoMind One、Meta AI 眼镜和 OpenAI 耳机相关信息也都是既有预订、备案或传闻节点，不计入今天主清单。
+        </div>
+      </section>
+
+      <section>
+        <h2>家庭消费者</h2>
+        <div class="empty">
+          <strong>无新增高置信纳入项。</strong> Dyson Spot+Scrub Ai 马来西亚发布已经在上一轮报告覆盖；今天看到的家庭机器人、AI 清洁服务和智能家居报道没有新的成品发布或开售节点。
+        </div>
+      </section>
+
+      <section>
+        <h2>企业消费者</h2>
+        <p class="section-note">今天唯一进入主清单的是面向开发者和企业技术团队的桌面 AI 开发硬件。它不是云基础设施或芯片单体，而是可摆在桌面使用的 Surface 品牌完整设备。</p>
+        <div class="grid one">
+          <article class="card">
+            <img src="assets/surface-rtx-spark-dev-box.jpg" alt="Microsoft Surface RTX Spark Dev Box">
+            <div class="card-body">
+              <div class="tags">
+                <span class="tag">企业消费者</span>
+                <span class="tag blue">本地 AI 开发盒</span>
+                <span class="tag gold">Microsoft Build 2026</span>
+              </div>
+              <h3>Microsoft Surface RTX Spark Dev Box</h3>
+              <p>Microsoft 在 Build 2026 发布 Surface RTX Spark Dev Box，这是 Surface 产品线面向 AI 开发者的紧凑型桌面电脑，搭载 NVIDIA RTX Spark superchip、128GB 统一内存，并预装开发者优化的 Windows 11 Pro 环境。</p>
+              <ul>
+                <li><strong>为什么纳入：</strong>这是一个完整桌面设备，有明确发布节点和后续销售路径，面向需要本地运行、微调和测试模型的开发者与企业团队。</li>
+                <li><strong>核心能力：</strong>Microsoft 称其可提供最高 1 petaflop AI 计算能力，可在本地运行 120B+ 参数模型与长上下文推理，并支持 WSL 2 GPU passthrough、CUDA、VS Code、GitHub Copilot、Python 和 Node.js。</li>
+                <li><strong>销售状态：</strong>官方称今年晚些时候在美国通过 Microsoft.com 独家销售；价格尚未披露，产品仍受监管认证与上市条件约束。</li>
+                <li><strong>分类判断：</strong>企业消费者 / 开发者硬件。它是终端设备，不是单独芯片、服务器机架或云服务。</li>
+              </ul>
+              <p>来源：<a href="https://blogs.windows.com/devices/2026/06/02/building-the-next-generation-of-devices-for-developers-surface-rtx-spark-dev-box/">Microsoft Devices Blog</a>、<a href="https://blogs.windows.com/windowsdeveloper/2026/06/02/build-2026-furthering-windows-as-the-trusted-platform-for-development/">Windows Developer Blog</a>、<a href="https://www.spokesman.com/stories/2026/jun/02/microsoft-showcases-new-pc-cloud-ai-tools-at-devel/">Reuters 经 The Spokesman-Review</a></p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2>边界与排除记录</h2>
+        <p class="section-note">下面这些是今天搜索中容易被误纳入的信号。排除原因写清楚，后续如出现正式 SKU、价格、销售或部署节点，可以进入下一轮观察。</p>
+        <table>
+          <thead>
+            <tr>
+              <th>候选信号</th>
+              <th>来源时间</th>
+              <th>排除原因</th>
+              <th>来源</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="候选信号">MSI Stealth 16 AI+</td>
+              <td data-label="来源时间">2026-06-02 00:08 UTC / 08:08 CST</td>
+              <td data-label="排除原因">完整 AI PC 且有全球可售节点，但发布时间早于本次窗口，避免补录造成窗口口径漂移。</td>
+              <td data-label="来源"><a href="https://www.portrait.com/msi-introduces-the-first-calman-verified-gaming-laptop-with-end-user-calibration-capability/">Portrait Displays</a>、<a href="https://us.msi.com/Laptop/Stealth-16-AI-Plus-B3WX">MSI</a></td>
+            </tr>
+            <tr>
+              <td data-label="候选信号">Compal POLYMEDX 智慧医院 Physical AI 平台</td>
+              <td data-label="来源时间">2026-06-02 02:00 ET / 14:00 CST</td>
+              <td data-label="排除原因">属于医院级平台、机器人协作和数字孪生方案展示，没有独立终端硬件 SKU 或购买节点。</td>
+              <td data-label="来源"><a href="https://www.prnewswire.com/news-releases/computex-2026-compal-accelerates-smart-hospital-physical-ai-deployment-with-nvidia-at-computex-2026-302786763.html">PR Newswire</a></td>
+            </tr>
+            <tr>
+              <td data-label="候选信号">TARS DexHand 与 AWE 3.0</td>
+              <td data-label="来源时间">2026-06-02 11:33 GMT / 19:33 CST</td>
+              <td data-label="排除原因">灵巧手是机器人部件 / 研究平台，不是面向最终用户的完整 AI 硬件终端。</td>
+              <td data-label="来源"><a href="https://www.prnewswire.com/de/pressemitteilungen/from-mind-to-hand-tars-brings-a-dexterous-hand-with-brain-and-awe3-0-to-icra-2026--302788467.html">PR Newswire</a></td>
+            </tr>
+            <tr>
+              <td data-label="候选信号">Yuanhua KUNWU 骨科手术机器人巴西临床落地</td>
+              <td data-label="来源时间">2026-06-02 11:57 CST，临床事件为 2026-05-29</td>
+              <td data-label="排除原因">商业化临床落地信号明确，但发布时间早于本次窗口，且事件发生在 5 月 29 日。</td>
+              <td data-label="来源"><a href="https://www.prnewswire.com/apac/news-releases/chinese-orthopaedic-robot-kunwu-lands-in-brazil-completing-first-clinical-surgery-in-an-international-hospital-302787896.html">PR Newswire</a></td>
+            </tr>
+            <tr>
+              <td data-label="候选信号">Microsoft Project Solara 桌面终端与智能胸牌</td>
+              <td data-label="来源时间">2026-06-02 Build</td>
+              <td data-label="排除原因">官方描述为平台和概念设备，尚不是可购买或可部署的成品硬件。</td>
+              <td data-label="来源"><a href="https://blogs.windows.com/windowsdeveloper/2026/06/02/build-2026-furthering-windows-as-the-trusted-platform-for-development/">Windows Developer Blog</a></td>
+            </tr>
+            <tr>
+              <td data-label="候选信号">Microsoft Majorana 2</td>
+              <td data-label="来源时间">2026-06-02</td>
+              <td data-label="排除原因">量子芯片 / 研发里程碑，不是面向最终用户的 AI 硬件完成品。</td>
+              <td data-label="来源"><a href="https://news.microsoft.com/source/features/innovation/majorana-2-microsoft-discovery-agentic-ai/">Microsoft Source</a></td>
+            </tr>
+            <tr>
+              <td data-label="候选信号">Meta 新 AI 眼镜 FCC 文件</td>
+              <td data-label="来源时间">2026-06-02</td>
+              <td data-label="排除原因">监管备案是临近发布信号，但没有正式产品名、售价、发布日期或销售节点。</td>
+              <td data-label="来源"><a href="https://www.qoo10.co.id/en/tech/106107/meta-files-new-ai-glasses-directly-with-the-fcc-hinting-at-a-break-from-ray-ban/">Qoo Media</a></td>
+            </tr>
+            <tr>
+              <td data-label="候选信号">OpenAI 耳机、Meta AI Pendant 传闻</td>
+              <td data-label="来源时间">2026-06-02</td>
+              <td data-label="排除原因">路线图、泄露或传闻，不是今天发布的完成品。</td>
+              <td data-label="来源"><a href="https://www.headphonesty.com/2026/06/openai-earbuds-release/">Headphonesty</a>、<a href="https://idevice.com/ai-pendants/meta-pendant/roadmap">iDevice</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>今日结论</h2>
+        <div class="takeaway">
+          <p><strong>今天不是“AI 硬件新品爆发日”，而是严格口径下的低产出日。</strong> Computex、GTC Taipei、Build 和 ICRA 带来了大量 AI 基础能力、开发平台、机器人研究和概念设备，但真正满足“过去 24 小时内发布、完整硬件、面向最终用户”的只有 Surface RTX Spark Dev Box。它延续了本周的核心方向：把大模型开发和智能体调试从云端拉回桌面终端。</p>
+        </div>
+      </section>
+
+      <footer>
+        <p>生成时间：2026-06-03 13:06 CST。检索范围覆盖全球英文、中文科技媒体、厂商博客、PR Newswire、Business Wire、Computex / Build / ICRA 相关报道。纳入口径仅限面向最终用户的完成品 AI 硬件，排除芯片、服务器基础设施、平台方案、开发组件、软件服务、概念展示和传闻。</p>
+      </footer>
+    </div>
+  </main>
+</body>
+</html>
