@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI硬件日报 2026-06-05：过去24小时全球终端完成品发布与开售</title>
+  <meta property="og:title" content="AI硬件日报 2026-06-05：过去24小时全球终端完成品发布与开售">
+  <meta property="og:description" content="2 纳入主清单的今日有效硬件节点；1 个人消费者：AI 智能眼镜发布 / 预约；1 家庭消费者：AI 扫拖机器人开售">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://dongdongsmall.github.io/ai-hardware-reports/2026-06-05/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:image" content="https://dongdongsmall.github.io/ai-hardware-reports/2026-06-05/assets/screening-dashboard.svg">
+  <meta name="twitter:image" content="https://dongdongsmall.github.io/ai-hardware-reports/2026-06-05/assets/screening-dashboard.svg">
+  <style>
+    :root {
+      --ink: #17202a;
+      --muted: #60717d;
+      --line: #d8e0e6;
+      --paper: #f4f6f1;
+      --panel: #ffffff;
+      --blue: #245f79;
+      --green: #3f7459;
+      --gold: #9a6a22;
+      --red: #a84a42;
+      --shadow: 0 18px 44px rgba(34, 55, 68, .12);
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      line-height: 1.65;
+    }
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    header {
+      color: #fff;
+      background:
+        linear-gradient(115deg, rgba(13, 20, 27, .94), rgba(36, 75, 83, .78)),
+        url("assets/monako-official-1.jpg") center / cover;
+      padding: 46px 22px 42px;
+    }
+    .wrap { max-width: 1160px; margin: 0 auto; }
+    .eyebrow {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 20px;
+      color: rgba(255,255,255,.92);
+      font-size: 13px;
+    }
+    .pill {
+      border: 1px solid rgba(255,255,255,.34);
+      border-radius: 999px;
+      padding: 5px 10px;
+      background: rgba(255,255,255,.14);
+      backdrop-filter: blur(8px);
+    }
+    h1 {
+      max-width: 980px;
+      margin: 0;
+      font-size: clamp(32px, 5.8vw, 62px);
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+    .dek {
+      max-width: 900px;
+      margin: 20px 0 0;
+      color: rgba(255,255,255,.9);
+      font-size: 18px;
+    }
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 28px;
+    }
+    .metric {
+      border: 1px solid rgba(255,255,255,.28);
+      background: rgba(255,255,255,.14);
+      padding: 14px 16px;
+      border-radius: 8px;
+      min-height: 104px;
+    }
+    .metric strong {
+      display: block;
+      font-size: 34px;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .metric span { color: rgba(255,255,255,.88); font-size: 13px; }
+    main { padding: 34px 22px 56px; }
+    section { margin: 26px 0 40px; }
+    h2 {
+      margin: 0 0 14px;
+      font-size: 26px;
+      line-height: 1.2;
+      letter-spacing: 0;
+    }
+    .section-note {
+      margin: 0 0 18px;
+      color: var(--muted);
+      max-width: 920px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+    }
+    .card img {
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      object-fit: cover;
+      display: block;
+      background: #dde6ea;
+    }
+    .card-body { padding: 18px; }
+    .tags { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 12px; }
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      padding: 3px 9px;
+      background: #eef5f1;
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 650;
+    }
+    .tag.blue { background: #edf4f8; color: var(--blue); }
+    .tag.gold { background: #fff4dc; color: var(--gold); }
+    .tag.red { background: #fff0ee; color: var(--red); }
+    h3 {
+      margin: 0 0 10px;
+      font-size: 21px;
+      line-height: 1.25;
+      letter-spacing: 0;
+    }
+    .card p { margin: 0 0 12px; color: #303b45; }
+    ul { margin: 0; padding-left: 19px; }
+    li { margin: 6px 0; }
+    .visual {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      display: block;
+      box-shadow: var(--shadow);
+      background: #fff;
+    }
+    .empty {
+      border: 1px dashed #b8c6ce;
+      border-radius: 8px;
+      padding: 18px;
+      background: rgba(255,255,255,.72);
+      color: #3a4954;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 10px 28px rgba(39, 62, 75, .08);
+    }
+    th, td {
+      text-align: left;
+      vertical-align: top;
+      padding: 12px 13px;
+      border-bottom: 1px solid var(--line);
+      font-size: 14px;
+    }
+    th {
+      color: #fff;
+      background: #254f68;
+      font-weight: 700;
+    }
+    tr:last-child td { border-bottom: 0; }
+    .takeaway {
+      background: linear-gradient(135deg, #ffffff, #edf5f2);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: var(--shadow);
+    }
+    footer {
+      color: var(--muted);
+      font-size: 13px;
+      border-top: 1px solid var(--line);
+      padding-top: 18px;
+    }
+    @media (max-width: 900px) {
+      header { padding-top: 36px; }
+      .metrics, .grid { grid-template-columns: 1fr; }
+      .metric { min-height: auto; }
+      table, thead, tbody, th, td, tr { display: block; }
+      thead { display: none; }
+      tr { border-bottom: 1px solid var(--line); }
+      td { border: 0; padding: 8px 12px; }
+      td::before {
+        content: attr(data-label);
+        display: block;
+        font-weight: 700;
+        color: var(--muted);
+        margin-bottom: 2px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="eyebrow">
+        <span class="pill">AI硬件，每日推送</span>
+        <span class="pill">时间窗：2026-06-04 13:10 - 2026-06-05 13:10 CST</span>
+        <span class="pill">口径：全球发布 / 上市 / 首销 / 预约</span>
+      </div>
+      <h1>2026 年 6 月 5 日：全球终端 AI 硬件完成品日报</h1>
+      <p class="dek">今天的有效信号不多，但边界很清楚：个人侧是 Monako Glass 把 AI 编程工作台塞进眼镜形态；家庭侧是 Dreame X60 Pro Ultra Complete 在欧洲进入 6 月 5 日开售节点。企业侧多数新闻仍是参考平台、基础设施或展示汇总，没有新的高置信终端成品。</p>
+      <div class="metrics">
+        <div class="metric"><strong>2</strong><span>纳入主清单的今日有效硬件节点</span></div>
+        <div class="metric"><strong>1</strong><span>个人消费者：AI 智能眼镜发布 / 预约</span></div>
+        <div class="metric"><strong>1</strong><span>家庭消费者：AI 扫拖机器人开售</span></div>
+        <div class="metric"><strong>12</strong><span>平台、部件、非 AI 或过窗信号被排除</span></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <section>
+        <h2>筛选概览</h2>
+        <p class="section-note">本期按 2026-06-04 13:10 至 2026-06-05 13:10 CST 检索全球英文、中文、法文、德文、斯洛伐克文和 RSS 来源。只纳入面向最终用户的完整 AI 硬件，排除芯片、存储、光模块、数据中心、ODM 参考设计、软件更新、市场分析、传闻和没有明确发布或销售节点的展台汇总。</p>
+        <img class="visual" src="assets/screening-dashboard.svg" alt="过去24小时AI硬件筛选概览">
+      </section>
+
+      <section>
+        <h2>个人消费者</h2>
+        <p class="section-note">今天个人侧只有一个高置信新发布项。它面向开发者、研究人员和 AI power users，虽然更偏生产力工具，但仍是可穿戴终端成品，而不是组件或开发板。</p>
+        <div class="grid">
+          <article class="card">
+            <img src="assets/monako-official-1.jpg" alt="Monako Glass 智能眼镜">
+            <div class="card-body">
+              <div class="tags">
+                <span class="tag">个人消费者</span>
+                <span class="tag blue">AI 智能眼镜</span>
+                <span class="tag gold">6 月 4 日发布 / 预约</span>
+              </div>
+              <h3>Monako Glass</h3>
+              <p>Monako Glass 是一款面向 AI 编程、研究和创作工作流的智能眼镜。Mint 和 NewsBytes 均在 6 月 4 日报道其发布，Monako 官网前端文案显示其支持 Claude Code、Codex、Unreal Engine、Blender 和 After Effects 连接，并提供 19 美元预约入口。</p>
+              <ul>
+                <li><strong>为什么纳入：</strong>这是完整可穿戴终端，具备眼镜形态、显示、摄像头、扬声器、骨传导鼻梁麦克风、手势交互和自研 MonoOS，不是组件或上游平台。</li>
+                <li><strong>AI 与硬件能力：</strong>官方文案称其为 Agent Terminal，第三方报道写明可在抬头显示中使用 Claude Code 和 Codex 等 AI 编程工具；Mint 还提到内置视觉引擎和 0.5 TOPS NPU。</li>
+                <li><strong>关键规格：</strong>约 48g，波导显示、摄像头、扬声器、骨传导麦克风、手势控制，MonoOS 使用 Linux 和 Lua 应用层。</li>
+                <li><strong>边界：</strong>当前节点按发布 / 预约处理，不写成现货开售；若后续明确量产发货，再按开售或首批发货节点追踪。</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2>家庭消费者</h2>
+        <p class="section-note">家庭侧保留一个今天真正进入销售窗口的 AI 清洁硬件。Dreame 在 5 月底已经完成发布，本期只记录 6 月 5 日开售的 X60 Pro Ultra Complete，8 月才上市的 Matrix / Master 不计入今天主项。</p>
+        <div class="grid">
+          <article class="card">
+            <img src="assets/dreame-x60-pro.jpg" alt="Dreame X60 Pro Ultra Complete 扫拖机器人">
+            <div class="card-body">
+              <div class="tags">
+                <span class="tag">家庭消费者</span>
+                <span class="tag blue">扫拖机器人</span>
+                <span class="tag gold">6 月 5 日欧洲开售</span>
+              </div>
+              <h3>Dreame X60 Pro Ultra Complete</h3>
+              <p>Dreame X60 Pro 系列在欧洲发布后，X60 Pro Ultra Complete 今天进入开售窗口。Basic Tutorials 的价格表写明该型号 6 月 5 日起售，Notebookcheck 同样记录其 2026 年 6 月 5 日上市，MSRP 为 1,499 欧元，首周有 200 欧元折扣。</p>
+              <ul>
+                <li><strong>为什么纳入：</strong>完整家用扫拖机器人和基站组合，今天有明确上市 / 开售节点，直接面向家庭消费者。</li>
+                <li><strong>AI 与硬件能力：</strong>产品报道提到 AI OmniSight 3.0、避障 / 导航、Dual UltraExtend Arms 双机械臂系统，机器人可伸出边刷和拖布处理墙边、家具边缘和狭窄区域。</li>
+                <li><strong>关键规格：</strong>Dual UltraExtend Arms、最高 25,000Pa 吸力、约 220 分钟续航、越障能力、Matter over Wi-Fi 和自动清洁基站。</li>
+                <li><strong>边界：</strong>Cyber X 爬楼模块和 X60 Pro Ultra Matrix / Master 的实际上市时间不在今天窗口内，因此不作为独立主清单项。</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2>企业消费者</h2>
+        <div class="empty">今天未发现新的高置信企业消费者终端成品。相关企业新闻主要集中在会议参考设计、AI 数据中心、存储 / 光模块、Computex 展示和运营平台，不符合“最终用户可购买 / 部署的完成品 AI 硬件”口径。</div>
+      </section>
+
+      <section>
+        <h2>边界排除记录</h2>
+        <p class="section-note">以下项目有 AI 或硬件关键词，但未进入主清单。排除依据以“不是终端成品”“没有今天有效开售节点”“非 AI 硬件”或“仅为软件 / 平台 / 传闻”为主。</p>
+        <table>
+          <thead>
+            <tr>
+              <th>项目 / 信号</th>
+              <th>来源时间</th>
+              <th>排除原因</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="项目 / 信号">Primax AI conference solution</td>
+              <td data-label="来源时间">PRNewswire，2026-06-05 00:37 ET 更正稿</td>
+              <td data-label="排除原因">面向客户建设会议系统的 Qualcomm Dragonwing Q-7790 参考设计 / ODM+ 方案，不是独立面向最终用户销售的品牌成品。</td>
+            </tr>
+            <tr>
+              <td data-label="项目 / 信号">TCL 2026 欧洲显示器系列</td>
+              <td data-label="来源时间">PRNewswire，2026-06-04 23:58 ET</td>
+              <td data-label="排除原因">完整消费电子硬件，但核心是 OLED+ / Mini LED 显示器，未形成明确 AI 硬件能力或 AI 交互卖点。</td>
+            </tr>
+            <tr>
+              <td data-label="项目 / 信号">GIGABYTE ENTER INFINITY / AORUS INFINITY</td>
+              <td data-label="来源时间">PRNewswire，2026-06-04 23:38 ET</td>
+              <td data-label="排除原因">主要是 Computex 展台、主板、显卡、外设、机箱、AI TOP / AI BOX 展示，没有新的当日终端成品销售节点。</td>
+            </tr>
+            <tr>
+              <td data-label="项目 / 信号">NAVEE Commercial N2 和 City King</td>
+              <td data-label="来源时间">PRNewswire，2026-06-04 23:28 ET</td>
+              <td data-label="排除原因">商用共享出行和车队平台完整，但不是明确 AI 硬件产品；智能运营不等于 AI 终端硬件。</td>
+            </tr>
+            <tr>
+              <td data-label="项目 / 信号">SuperX 1.6T 光模块 / AIDC 方案</td>
+              <td data-label="来源时间">PRNewswire，2026-06-04 22:26 ET</td>
+              <td data-label="排除原因">AI 数据中心基础设施和光互连，属于上游 / 基础设施，按规则排除。</td>
+            </tr>
+            <tr>
+              <td data-label="项目 / 信号">Longsys AIDIMM / AILPBGA</td>
+              <td data-label="来源时间">TechPowerUp / TradingView，2026-06-04</td>
+              <td data-label="排除原因">AI 存储 / 内存组件，不是面向最终用户的完整 AI 硬件。</td>
+            </tr>
+            <tr>
+              <td data-label="项目 / 信号">Microsoft AI-powered workplace wearable</td>
+              <td data-label="来源时间">Google News RSS，2026-06-05 01:04 GMT</td>
+              <td data-label="排除原因">检索到的是测试 / 工作场景报道，未见可购买或可部署的完成品 SKU，暂按原型 / 测试排除。</td>
+            </tr>
+            <tr>
+              <td data-label="项目 / 信号">Dyson V16 Piston cordless vacuum lineup</td>
+              <td data-label="来源时间">Google News RSS，2026-06-04 22:45 GMT</td>
+              <td data-label="排除原因">属于清洁硬件可用性新闻，但未见足够明确的 AI 硬件卖点，且不是本期 AI 硬件主线。</td>
+            </tr>
+            <tr>
+              <td data-label="项目 / 信号">Meta 智能眼镜 App 人脸识别代码</td>
+              <td data-label="来源时间">The Verge / Wired 转述，2026-06-05</td>
+              <td data-label="排除原因">软件 / 代码发现，不是新硬件发布或开售。</td>
+            </tr>
+            <tr>
+              <td data-label="项目 / 信号">Meta 新眼镜 / AI pendant 传闻</td>
+              <td data-label="来源时间">多家媒体，2026-06-01 至 2026-06-04</td>
+              <td data-label="排除原因">路线图和传闻为主，未见今天正式发布的完成品硬件。</td>
+            </tr>
+            <tr>
+              <td data-label="项目 / 信号">Computex 2026 AI PC / 掌机 / 智能移动汇总</td>
+              <td data-label="来源时间">The New Indian Express，2026-06-04</td>
+              <td data-label="排除原因">展会综述，没有足够清晰的单一新成品 SKU 与当日销售节点；不重复计入前几天已覆盖的 Computex 项目。</td>
+            </tr>
+            <tr>
+              <td data-label="项目 / 信号">Project Solara / Microsoft Device Ecosystem Platform</td>
+              <td data-label="来源时间">Tom's Hardware，2026-06-04</td>
+              <td data-label="排除原因">平台、原型和生态路线，已在前期作为概念 / 平台排除，今天仍无最终用户成品节点。</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>判断结论</h2>
+        <div class="takeaway">
+          <p>今天的主线不是“大量新品”，而是两个很不同的方向：Monako Glass 代表 AI agent 工作流向可穿戴显示终端迁移；Dreame X60 Pro Ultra Complete 则代表家庭清洁机器人继续把机械臂、视觉识别和自动基站结合起来。企业侧看起来热闹，但大多仍是算力、参考设计或展台信息，按“面向最终用户完成品”标准不能入主清单。</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>主要来源</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>用途</th>
+              <th>来源</th>
+              <th>链接</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="用途">Monako 官方产品文案与预约入口</td>
+              <td data-label="来源">Monako.ai</td>
+              <td data-label="链接"><a href="https://www.monako.ai/">https://www.monako.ai/</a></td>
+            </tr>
+            <tr>
+              <td data-label="用途">Monako 第三方发布时间和规格</td>
+              <td data-label="来源">Mint，2026-06-04</td>
+              <td data-label="链接"><a href="https://www.livemint.com/technology/tech-news/meet-monako-glass-chinese-startup-brings-claude-code-and-codex-to-smart-glasses-11780547237901.html">Mint: Meet Monako Glass</a></td>
+            </tr>
+            <tr>
+              <td data-label="用途">Monako 发布补充核验</td>
+              <td data-label="来源">NewsBytes，2026-06-04</td>
+              <td data-label="链接"><a href="https://www.newsbytesapp.com/news/science/these-chinese-smart-glasses-can-run-claude-code-and-codex/story">NewsBytes: These Chinese smart glasses can run Claude Code and Codex</a></td>
+            </tr>
+            <tr>
+              <td data-label="用途">Dreame X60 Pro Ultra Complete 6 月 5 日开售和价格</td>
+              <td data-label="来源">Basic Tutorials，2026-05-27</td>
+              <td data-label="链接"><a href="https://basic-tutorials.com/news/dreame-x60-pro-series-robot-vacuum-with-bionic-robot-arm/">Basic Tutorials: Dreame X60 Pro series</a></td>
+            </tr>
+            <tr>
+              <td data-label="用途">Dreame 上市日期交叉验证</td>
+              <td data-label="来源">Notebookcheck，2026-05-29</td>
+              <td data-label="链接"><a href="https://www.notebookcheck.net/Dreame-Cyber-X-price-revealed-Cost-of-stair-climbing-and-cleaning.1310037.0.html">Notebookcheck: Dreame Cyber X price revealed</a></td>
+            </tr>
+            <tr>
+              <td data-label="用途">Dreame 官方新闻稿背景</td>
+              <td data-label="来源">PRNewswire UK，2026-05-27</td>
+              <td data-label="链接"><a href="https://www.prnewswire.co.uk/news-releases/dreame-launches-the-x60-pro-series-and-t-series-wet--dry-vacuums-pushing-smart-home-boundaries-further-than-ever-302782979.html">Dreame launches the X60 Pro Series</a></td>
+            </tr>
+            <tr>
+              <td data-label="用途">企业侧参考设计排除</td>
+              <td data-label="来源">PRNewswire，Primax，2026-06-05</td>
+              <td data-label="链接"><a href="https://www.prnewswire.com/news-releases/primax-advances-ai-conference-solutions-with-qualcomm-powered-edge-ai-platforms-302791716.html">Primax AI conference solutions</a></td>
+            </tr>
+            <tr>
+              <td data-label="用途">Computex 展台 / 非主清单排除</td>
+              <td data-label="来源">PRNewswire，GIGABYTE，2026-06-04</td>
+              <td data-label="链接"><a href="https://www.prnewswire.com/news-releases/gigabyte-ouvre-le-computex-2026-avec-enter-infinity-situe-a-lintersection-de-lia-du-gaming-et-de-linnovation-pc-302792272.html">GIGABYTE ENTER INFINITY</a></td>
+            </tr>
+            <tr>
+              <td data-label="用途">非 AI 显示器排除</td>
+              <td data-label="来源">PRNewswire，TCL，2026-06-04</td>
+              <td data-label="链接"><a href="https://www.prnewswire.com/news-releases/tcl-devoile-une-gamme-elargie-de-moniteurs-en-europe-dont-son-premier-moniteur-oled-phare-302792282.html">TCL 2026 monitor lineup</a></td>
+            </tr>
+            <tr>
+              <td data-label="用途">商用移动产品排除</td>
+              <td data-label="来源">PRNewswire，NAVEE Commercial，2026-06-04</td>
+              <td data-label="链接"><a href="https://www.prnewswire.com/news-releases/spolonos-navee-commercial-roziruje-svoje-portfolio-mestskej-mobility-na-vetrhu-mme-2026-302792263.html">NAVEE Commercial at MME 2026</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <footer>
+        <p>生成时间：2026-06-05 13:10 CST。报告由 Codex 自动化生成，筛选口径为“面向最终用户的完成品 AI 硬件产品”。默认不生成或推送长截图。</p>
+      </footer>
+    </div>
+  </main>
+</body>
+</html>

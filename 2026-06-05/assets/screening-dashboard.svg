@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 520" role="img" aria-labelledby="title desc">
+  <title id="title">2026-06-05 AI硬件筛选概览</title>
+  <desc id="desc">过去24小时全球终端AI硬件完成品筛选：2个主清单项目，1个个人消费者项目，1个家庭消费者项目，0个企业消费者项目。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7faf7"/>
+      <stop offset="1" stop-color="#e8f0f2"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#203642" flood-opacity=".14"/>
+    </filter>
+  </defs>
+  <rect width="1120" height="520" rx="18" fill="url(#bg)"/>
+  <g transform="translate(46 40)">
+    <text x="0" y="0" font-family="-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',sans-serif" font-size="28" font-weight="700" fill="#162530">过去24小时筛选漏斗</text>
+    <text x="0" y="36" font-family="-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',sans-serif" font-size="15" fill="#63737e">2026-06-04 13:10 - 2026-06-05 13:10 CST；仅保留面向最终用户的完成品 AI 硬件。</text>
+  </g>
+  <g filter="url(#shadow)" font-family="-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',sans-serif">
+    <rect x="56" y="122" width="236" height="126" rx="12" fill="#ffffff" stroke="#d9e3e8"/>
+    <text x="82" y="162" font-size="42" font-weight="800" fill="#245f79">31</text>
+    <text x="82" y="192" font-size="18" font-weight="700" fill="#1f2d36">初筛信号</text>
+    <text x="82" y="220" font-size="14" fill="#61727d">新闻、官网、新闻稿、RSS</text>
+
+    <rect x="324" y="122" width="236" height="126" rx="12" fill="#ffffff" stroke="#d9e3e8"/>
+    <text x="350" y="162" font-size="42" font-weight="800" fill="#3f7459">9</text>
+    <text x="350" y="192" font-size="18" font-weight="700" fill="#1f2d36">可疑候选</text>
+    <text x="350" y="220" font-size="14" fill="#61727d">有产品名或硬件节点</text>
+
+    <rect x="592" y="122" width="236" height="126" rx="12" fill="#ffffff" stroke="#d9e3e8"/>
+    <text x="618" y="162" font-size="42" font-weight="800" fill="#9a6a22">2</text>
+    <text x="618" y="192" font-size="18" font-weight="700" fill="#1f2d36">主清单入选</text>
+    <text x="618" y="220" font-size="14" fill="#61727d">今天发布 / 开售节点清楚</text>
+
+    <rect x="860" y="122" width="204" height="126" rx="12" fill="#ffffff" stroke="#d9e3e8"/>
+    <text x="886" y="162" font-size="42" font-weight="800" fill="#a84a42">12</text>
+    <text x="886" y="192" font-size="18" font-weight="700" fill="#1f2d36">明确排除</text>
+    <text x="886" y="220" font-size="14" fill="#61727d">芯片、平台、原型、非 AI</text>
+  </g>
+  <g stroke="#9cb0ba" stroke-width="3" stroke-linecap="round">
+    <path d="M294 185h28"/>
+    <path d="M562 185h28"/>
+    <path d="M830 185h28"/>
+  </g>
+  <g transform="translate(56 300)" font-family="-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',sans-serif">
+    <text x="0" y="0" font-size="21" font-weight="700" fill="#162530">入选分布</text>
+    <g transform="translate(0 28)">
+      <rect width="318" height="110" rx="12" fill="#edf4f8" stroke="#b8cbd5"/>
+      <text x="24" y="38" font-size="36" font-weight="800" fill="#245f79">1</text>
+      <text x="74" y="38" font-size="18" font-weight="700" fill="#1f2d36">个人消费者</text>
+      <text x="24" y="78" font-size="14" fill="#53656f">Monako Glass：AI 编程 / 研究眼镜</text>
+    </g>
+    <g transform="translate(352 28)">
+      <rect width="318" height="110" rx="12" fill="#eef5f1" stroke="#bad1c3"/>
+      <text x="24" y="38" font-size="36" font-weight="800" fill="#3f7459">1</text>
+      <text x="74" y="38" font-size="18" font-weight="700" fill="#1f2d36">家庭消费者</text>
+      <text x="24" y="78" font-size="14" fill="#53656f">Dreame X60 Pro Ultra Complete：AI 扫拖机器人</text>
+    </g>
+    <g transform="translate(704 28)">
+      <rect width="318" height="110" rx="12" fill="#fff4dc" stroke="#dcc48e"/>
+      <text x="24" y="38" font-size="36" font-weight="800" fill="#9a6a22">0</text>
+      <text x="74" y="38" font-size="18" font-weight="700" fill="#1f2d36">企业消费者</text>
+      <text x="24" y="78" font-size="14" fill="#53656f">今天无高置信终端成品节点</text>
+    </g>
+  </g>
+</svg>
